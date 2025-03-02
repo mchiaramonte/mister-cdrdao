@@ -24,12 +24,16 @@ sudo ln -s /opt/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf/arm-none-li
 sudo ln -s /opt/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf/arm-none-linux-gnueabihf/libc/lib/libc.so.6 /lib/libc.so.6
 sudo ln -s /opt/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf/arm-none-linux-gnueabihf/libc/lib/libpthread.so.0 /lib/libpthread.so.0
 
-# Get and unpack the latest version of cdrdao
-wget https://sourceforge.net/projects/cdrdao/files/rel_1_2_5/cdrdao-1.2.5.tar.bz2/download -O cdrdao-latest.tar.bz2
-tar xvfj cdrdao-latest.tar.bz2
+# Get latest version of CDRDAO
+if [ ! -d "cdrdao-repo" ]; then
+    git clone https://github.com/cdrdao/cdrdao.git cdrdao-repo
+fi
 
-# Go into the cdrdao directory and configure the build to run for ARM Linux
-cd `find . -maxdepth 1 -type d -iname '*cdrdao*' -exec basename {} \;`
+# Go into the cdrdao-repo directory and configure the build to run for ARM Linux
+cd cdrdao-repo
+git checkout master
+git pull
+autoreconf -fi
 ./configure --host=arm-none-linux-gnueabihf
 make all
 
