@@ -21,3 +21,7 @@ The final output of this script is `mister-cdrdao.tar.gz`.
 This script uses cdrdao to rip the disc to the current directory, naming the CUE/BIN files after the disc label. If no label is found, the files will default to `unknown`.
 
 Future updates will integrate data from redump.org to compare the BIN's checksum, allowing the script to identify the platform and assign a more accurate name to the output. Stay tuned!
+
+## Upcoming
+
+I've figured out why multitrack mixed mode discs don't rip properly. The audio tracks need to be byte reversed and the CUE file needs to be modified because the track indices don't work properly if they're less than 1 second (at least not in duckstation or on MiSTer) so I'm working on getting that resolved. That'll be in the next update, hopefully.
