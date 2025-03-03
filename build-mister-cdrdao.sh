@@ -38,8 +38,8 @@ autoreconf -fi
 make all
 
 # Fetch the necessary files and package
-./getredumdata.sh
 cp ./dao/cdrdao $STARTDIR
 cp ./utils/toc2cue $STARTDIR
 cd $STARTDIR
+./getredumdata.sh
 tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh
