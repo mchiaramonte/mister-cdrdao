@@ -41,5 +41,5 @@ make all
 cp ./dao/cdrdao $STARTDIR
 cp ./utils/toc2cue $STARTDIR
 cd $STARTDIR
-./getredumdata.sh
+./getredumpdata.sh
 tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh
