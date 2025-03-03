@@ -77,7 +77,7 @@ def parse_cue_file(orig_file, psx_db, saturn_db, audio_flag):
                     renamed = True
                     if game is not None:
                         new_file_name = game.attrib["name"]
-                        print(f"Found game in Redump database: {new_file_name}")
+                        print(f"\n *** Found game in Redump database: {new_file_name} ***")
                         out_file.close()
                         out_file = open(f"{new_file_name}.cue", "w")
                     else:
