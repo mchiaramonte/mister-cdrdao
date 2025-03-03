@@ -36,3 +36,4 @@ mv *.cue /media/fat/games/$PLATFORM/
 mv *.bin /media/fat/games/$PLATFORM/
 
 echo "Complete!"
+eject
