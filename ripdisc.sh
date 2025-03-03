@@ -1,6 +1,4 @@
-echo "Waiting for drive..."
 # Do this to wait for the drive to be ready
-blkid 
 # Try to get a disc label
 DISCNAME=`lsblk -n -o LABEL /dev/sr0 | sed 's/(.*)/$1/'`
 if [ -z "$DISCNAME" ]; then
@@ -14,7 +12,7 @@ echo Ripping $DISCNAME
 # if the CUE contains AUDIO tracks
 if [ `grep -e AUDIO $DISCNAME.cue | wc -l` -gt 0 ]; then
 	# Split the BIN file
-	echo "Audio tracks detected. Splitting BIN/CUE..."
+	echo "Audio tracks detected. Splitting BIN/CUE. This may take a long time if there are many audio tracks..."
 	./binmerge -s $DISCNAME.cue $DISCNAME -o ./output
 	rm $DISCNAME.bin $DISCNAME.cue 
 	mv ./output/* .
@@ -30,9 +28,11 @@ if [ -z "$PLATFORM" ]; then
 	PLATFORM=PSX
 fi
 
+rm $DISCNAME.toc
+rm $DISCNAME.cue
+
 echo "Moving to $PLATFORM directory..."
 mv *.cue /media/fat/games/$PLATFORM/
 mv *.bin /media/fat/games/$PLATFORM/
 
 echo "Complete!"
-rm $DISCNAME.toc

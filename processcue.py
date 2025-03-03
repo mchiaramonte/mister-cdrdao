@@ -5,16 +5,34 @@ import struct
 import xml.etree.ElementTree as ET
 import hashlib
 from pathlib import Path
+import mmap
 
-def reverse_byte_order_16bit(input_file, output_file, padding_bytes=0):
-    # Reverse the byte order of 16-bit samples in a binary file.
+def reverse_byte_order_16bit(input_file, output_file, padding_bytes=0, chunk_size=4096):
+    print(output_file, end='')
+    """Efficiently reverse 16-bit byte order in large chunks for slow drives."""
     with open(input_file, "rb") as f_in, open(output_file, "wb") as f_out:
-        f_out.write(b'\x00' * padding_bytes)  # Write padding
-        
-        while chunk := f_in.read(2):  # Read in 2-byte chunks
-            if len(chunk) == 2:
-                swapped = struct.pack("<H", struct.unpack(">H", chunk)[0])  # Swap endian
-                f_out.write(swapped)
+        # Write initial padding
+        f_out.write(b'\x00' * padding_bytes)
+
+        # Memory-map the input file (fast reading)
+        with mmap.mmap(f_in.fileno(), 0, access=mmap.ACCESS_READ) as mm:
+            buffer = bytearray(chunk_size)
+
+            for i in range(0, len(mm), chunk_size):
+                print(".", end='', flush=True)
+                chunk = mm[i : i + chunk_size]
+                chunk_len = len(chunk)
+
+                if chunk_len % 2 != 0:  # If odd number of bytes, ignore the last one
+                    chunk = chunk[:-1]
+
+                # Unpack as 16-bit big-endian and repack as little-endian in bulk
+                swapped_chunk = struct.pack("<" + "H" * (chunk_len // 2), *struct.unpack(">" + "H" * (chunk_len // 2), chunk))
+
+                # Extend buffer and write it all at once
+                buffer[: len(swapped_chunk)] = swapped_chunk
+                f_out.write(buffer[: len(swapped_chunk)])
+    print("")
 
 def calculate_md5(file_path):
     md5 = hashlib.md5()
@@ -77,7 +95,8 @@ def parse_cue_file(orig_file, psx_db, saturn_db, audio_flag):
 
                 if track_type == "AUDIO":
                     print(f"Padding and reversing audio track {track_number} from {binary_file}")
-                    reverse_byte_order_16bit(binary_file, new_track_name)
+                    reverse_byte_order_16bit(binary_file, new_track_name,352800)
+                    os.remove(binary_file)
                 else:
                     os.rename(binary_file, new_track_name)
 
