@@ -29,6 +29,18 @@ if [ ! -d "cdrdao-repo" ]; then
     git clone https://github.com/cdrdao/cdrdao.git cdrdao-repo
 fi
 
+# Get the latest version of binmerge
+if [ ! -d "binmerge-repo" ]; then
+    git clone https://github.com/putnam/binmerge.git binmerge-repo
+fi
+
+# Copy the latest version of binmerge for splitting the BIN/CUE files
+cd binmerge-repo
+git checkout main
+git pull
+cd $STARTDIR
+cp ./binmerge-repo/binmerge .
+
 # Go into the cdrdao-repo directory and configure the build to run for ARM Linux
 cd cdrdao-repo
 git checkout master
@@ -42,4 +54,4 @@ cp ./dao/cdrdao $STARTDIR
 cp ./utils/toc2cue $STARTDIR
 cd $STARTDIR
 bash ./getredumpdata.sh
-tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh
+tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh ./binmerge
