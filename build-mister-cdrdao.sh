@@ -6,7 +6,7 @@ STARTDIR=$PWD
 sudo apt update && sudo apt upgrade -y
 
 # Install the necessary packages
-sudo apt-get install build-essential git qemu-user libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf liblz4-tool bc curl gcc git libssl-dev libncurses5-dev lzop make u-boot-tools libgmp3-dev libmpc-dev -y
+sudo apt-get unzip install build-essential git qemu-user libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf liblz4-tool bc curl gcc git libssl-dev libncurses5-dev lzop make u-boot-tools libgmp3-dev libmpc-dev -y
 
 # Get and unpack the ARM compiler tools for x64
 wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
