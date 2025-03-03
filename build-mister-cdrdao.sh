@@ -37,8 +37,9 @@ autoreconf -fi
 ./configure --host=arm-none-linux-gnueabihf
 make all
 
-# Fetch and package the two necessary binaries
+# Fetch the necessary files and package
+./getredumdata.sh
 cp ./dao/cdrdao $STARTDIR
 cp ./utils/toc2cue $STARTDIR
 cd $STARTDIR
-tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue
+tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh
