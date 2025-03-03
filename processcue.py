@@ -2,89 +2,108 @@ import os
 import shutil
 import sys
 import struct
-import hashlib
 import xml.etree.ElementTree as ET
-import struct
+import hashlib
+from pathlib import Path
 
 def reverse_byte_order_16bit(input_file, output_file, padding_bytes=0):
+    # Reverse the byte order of 16-bit samples in a binary file.
     with open(input_file, "rb") as f_in, open(output_file, "wb") as f_out:
-        # Write zero-padding at the beginning
-        f_out.write(b'\x00' * padding_bytes)
+        f_out.write(b'\x00' * padding_bytes)  # Write padding
         
-        while chunk := f_in.read(2):  # Read 16-bit (2 bytes) at a time
-            if len(chunk) < 2:
-                break  # Ignore incomplete data (in case of odd bytes in file)
-            swapped = struct.pack("<H", struct.unpack(">H", chunk)[0])  # Swap endian
-            f_out.write(swapped)
+        while chunk := f_in.read(2):  # Read in 2-byte chunks
+            if len(chunk) == 2:
+                swapped = struct.pack("<H", struct.unpack(">H", chunk)[0])  # Swap endian
+                f_out.write(swapped)
 
-root = ET.parse("psx.dat").getroot()
-origFile = sys.argv[1]
-f = open(origFile, "r")
-newFile = sys.argv[1];
-o = open("temp_" + newFile, "w")
-totalFile = f.read();
-lines = totalFile.split("\n");
+def calculate_md5(file_path):
+    md5 = hashlib.md5()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):  # Read in chunks
+            md5.update(chunk)
+    return md5.hexdigest()
 
-if len(sys.argv) > 2:
-    audioFlag = False
-else:
-    audioFlag = True
+def parse_cue_file(orig_file, psx_db, saturn_db, audio_flag):
+    platform = "PSX"
+    """Parse and update the .cue file based on Redump database matching."""
+    orig_file = Path(orig_file)
+    # if we can't get the name of the game we'll swap back to this temp_ version of
+    # the file and update it
+    temp_file = Path(f"temp_{orig_file.name}")
+    track_count = 0
+    renamed = False
+    binary_file = ""
 
-renamed = False
-binaryFile = ""
-trackCount = 0;
-for line in lines:
-    parts = line.strip().split(" ");
-    match parts[0].strip():
-        case 'FILE':
-            trackCount = trackCount + 1
-            binaryFile=line.strip().split("\"")[1]
-            md5sum = hashlib.md5(open(binaryFile, "rb").read()).hexdigest()
-            if not renamed:
-                # find the game by checksum if possible
-                # if we don't find it, we leave the name as it was
-                game = root.find(f'game/rom[@md5=\'{md5sum}\']/..')
-                renamed = True
-                if game is not None:
-                    os.remove("temp_" + newFile)
-                    newFile = game.attrib['name']
-                    print(f'Found game in redump database: {newFile}')
-                    o.close()
-                    o = open(f'{newFile}.cue',"w")
-                    if audioFlag:
-                        newFileName = f'{newFile} (Track {trackCount}).bin'
+    with orig_file.open("r") as f, temp_file.open("w") as out_file:
+        lines = f.read().split("\n")
+
+        for line in lines:
+            parts = line.strip().split(" ")
+            if not parts:
+                continue
+            
+            command = parts[0]
+            
+            if command == "FILE":
+                track_count += 1
+                binary_file = line.split("\"")[1]
+                
+                # Compute MD5 checksum for file matching
+                md5sum = calculate_md5(binary_file)
+
+                if not renamed:
+                    game = psx_db.find(f'game/rom[@md5="{md5sum}"]/..')
+                    if game is None:
+                        platform = "Saturn"
+                        game = saturn_db.find(f'game/rom[@md5="{md5sum}"]/..')
+                    renamed = True
+                    if game is not None:
+                        new_file_name = game.attrib["name"]
+                        print(f"Found game in Redump database: {new_file_name}")
+                        out_file.close()
+                        out_file = open(f"{new_file_name}.cue", "w")
                     else:
-                        newFileName = f'{newFile}.bin'
-                else:
-                    o.close()
-                    shutil.copy(origFile, f'{origFile}.bak')
-                    os.remove("temp_" + newFile)
-                    o = open(origFile, "w")
-            else:
-                if audioFlag:
-                    newFileName = f'{newFile} (Track {trackCount}).bin'
-                else:
-                    newFileName = f'{newFile}.bin'
+                        platform = ""
+                        # backup original, just in case
+                        shutil.copy(orig_file, f"{orig_file}.bak")
+                        new_file_name = orig_file.stem
+                
+                new_track_name = f"{new_file_name} (Track {track_count}).bin" if audio_flag else f"{new_file_name}.bin"
+                out_file.write(f'FILE "{new_track_name}" BINARY\n')
 
-            o.write(f'FILE "{newFileName}" BINARY\n')
-            trackNumber = ""
-            trackType = ""
-            trackIndexSeq = ""
-        case 'TRACK':
-            trackNumber = parts[1]
-            trackType = parts[2]
-            if trackType == 'AUDIO':
-                print(f'Padding and reversing audio track {trackNumber} using file {binaryFile}')
-                reverse_byte_order_16bit(binaryFile, newFileName, 0)
-            else:
-                os.rename(binaryFile, newFileName)
-            o.write(f'  TRACK {trackNumber} {trackType}\n')
-        case 'INDEX':
-            trackIndexSeq = parts[1]
-            indexTime = parts[2]
-            if trackType == 'AUDIO' and trackIndexSeq == '01':
-                indexTime = "00:02:00"
-            o.write(f'    INDEX {trackIndexSeq} {indexTime}\n')
+            elif command == "TRACK":
+                track_number = parts[1]
+                track_type = parts[2]
 
-o.close()
-f.close()
+                if track_type == "AUDIO":
+                    print(f"Padding and reversing audio track {track_number} from {binary_file}")
+                    reverse_byte_order_16bit(binary_file, new_track_name)
+                else:
+                    os.rename(binary_file, new_track_name)
+
+                out_file.write(f"  TRACK {track_number} {track_type}\n")
+
+            elif command == "INDEX":
+                track_index = parts[1]
+                index_time = parts[2]
+
+                if track_type == "AUDIO" and track_index == "01":
+                    index_time = "00:02:00"  # Adjust lead-in for audio tracks
+
+                out_file.write(f"    INDEX {track_index} {index_time}\n")
+
+    os.remove(temp_file)  # Clean up temporary file
+    return platform
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: script.py <cue_file> [no_audio_flag]")
+        sys.exit(1)
+
+    cue_file = sys.argv[1]
+    audio_flag = len(sys.argv) == 2  # Default to True if no second argument
+
+    psx_db = ET.parse("psx.dat").getroot()
+    saturn_db = ET.parse("saturn.dat").getroot()
+    print(f"Platform={parse_cue_file(cue_file, psx_db, saturn_db, audio_flag)}\n")
+

@@ -23,11 +23,16 @@ else
 	AUDIOFLAG=--no-audio
 fi
 
-python3 ./processcue.py $DISCNAME.cue $AUDIOFLAG
+PLATFORM=`python3 ./processcue.py $DISCNAME.cue $AUDIOFLAG | tee /dev/stderr | grep -i Platform | awk -F= '{print $2}'` 
 
-echo "Moving to PSX directory..."
-mv *.cue /media/fat/games/PSX/
-mv *.bin /media/fat/games/PSX/
+# Default to PSX if the platform was not determined
+if [ -z "$PLATFORM" ]; then
+	PLATFORM=PSX
+fi
+
+echo "Moving to $PLATFORM directory..."
+mv *.cue /media/fat/games/$PLATFORM/
+mv *.bin /media/fat/games/$PLATFORM/
 
 echo "Complete!"
-eject
+rm $DISCNAME.toc
