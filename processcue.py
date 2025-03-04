@@ -41,78 +41,83 @@ def calculate_md5(file_path):
             md5.update(chunk)
     return md5.hexdigest()
 
-def parse_cue_file(orig_file, psx_db, saturn_db, audio_flag):
+def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
     platform = "PSX"
     """Parse and update the .cue file based on Redump database matching."""
-    orig_file = Path(orig_file)
+    source_cue_file = Path(source_cue_file)
+    destination_cue_file = Path(source_cue_file)
     # if we can't get the name of the game we'll swap back to this temp_ version of
     # the file and update it
-    temp_file = Path(f"temp_{orig_file.name}")
     track_count = 0
-    renamed = False
     binary_file = ""
 
-    with orig_file.open("r") as f, temp_file.open("w") as out_file:
-        lines = f.read().split("\n")
+    with source_cue_file.open("r") as input_file:
+        lines = input_file.read().split("\n")
 
+        # Search for the game in the dat files using the checksum.
         for line in lines:
             parts = line.strip().split(" ")
-            if not parts:
-                continue
-            
             command = parts[0]
             
             if command == "FILE":
-                track_count += 1
-                binary_file = line.split("\"")[1]
-                
-                # Compute MD5 checksum for file matching
-                md5sum = calculate_md5(binary_file)
-
-                if not renamed:
-                    game = psx_db.find(f'game/rom[@md5="{md5sum}"]/..')
-                    if game is None:
+                source_cue_file = line.split("\"")[1]
+                md5sum = calculate_md5(source_cue_file)
+                psgame = psx_db.find(f'game/rom[@md5="{md5sum}"]/..')
+                satgame = saturn_db.find(f'game/rom[@md5="{md5sum}"]/..')
+                finalgame = psgame or satgame
+                if finalgame is not None:
+                    if satgame is not None:
                         platform = "Saturn"
-                        game = saturn_db.find(f'game/rom[@md5="{md5sum}"]/..')
-                    renamed = True
-                    if game is not None:
-                        new_file_name = game.attrib["name"]
-                        print(f"\n *** Found game in Redump database: {new_file_name} ***")
-                        out_file.close()
-                        out_file = open(f"{new_file_name}.cue", "w")
                     else:
-                        platform = ""
-                        # backup original, just in case
-                        shutil.copy(orig_file, f"{orig_file}.bak")
-                        new_file_name = orig_file.stem
-                
-                new_track_name = f"{new_file_name} (Track {track_count}).bin" if audio_flag else f"{new_file_name}.bin"
-                out_file.write(f'FILE "{new_track_name}" BINARY\n')
-
-            elif command == "TRACK":
-                track_number = parts[1]
-                track_type = parts[2]
-
-                if track_type == "AUDIO":
-                    print(f"Padding and reversing audio track {track_number} from {binary_file}")
-                    reverse_byte_order_16bit(binary_file, new_track_name,352800)
-                    os.remove(binary_file)
+                        platform = "PSX"
+                    
+                    game_name = finalgame.attrib["name"]
+                    print(f"\n *** Found game in Redump database: {game_name} ***")
+                    destination_cue_file = Path(f"{game_name}.cue")
                 else:
-                    os.rename(binary_file, new_track_name)
+                    # we're going with the original file, so make a backup copy before overwriting it
+                    shutil.copy(source_cue_file, f"{source_cue_file}.bak")
+                break
 
-                out_file.write(f"  TRACK {track_number} {track_type}\n")
+        with destination_cue_file.open("w") as output_file:
+            for line in lines:
+                parts = line.strip().split(" ")
+                if not parts:
+                    continue
+                
+                command = parts[0]
+                
+                if command == "FILE":
+                    track_count += 1
+                    binary_file = line.split("\"")[1]
 
-            elif command == "INDEX":
-                track_index = parts[1]
-                index_time = parts[2]
+                    new_track_name = f"{game_name} (Track {track_count}).bin" if audio_flag else f"{game_name}.bin"
+                    output_file.write(f'FILE "{new_track_name}" BINARY\n')
+                    shutil.copy(binary_file, new_track_name)
 
-                if track_type == "AUDIO" and track_index == "01":
-                    index_time = "00:02:00"  # Adjust lead-in for audio tracks
+                elif command == "TRACK":
+                    track_number = parts[1]
+                    track_type = parts[2]
 
-                out_file.write(f"    INDEX {track_index} {index_time}\n")
+                    if track_type == "AUDIO":
+                        print(f"Padding and reversing audio track {track_number} from {binary_file}")
+                        reverse_byte_order_16bit(binary_file, new_track_name, 352800)
+                        os.remove(binary_file)
+                    else:
+                        os.rename(binary_file, new_track_name)
 
-    os.remove(temp_file)  # Clean up temporary file
-    return platform
+                    output_file.write(f"  TRACK {track_number} {track_type}\n")
+
+                elif command == "INDEX":
+                    track_index = parts[1]
+                    index_time = parts[2]
+
+                    if track_type == "AUDIO" and track_index == "01":
+                        index_time = "00:02:00"  # Adjust lead-in for audio tracks
+
+                    output_file.write(f"    INDEX {track_index} {index_time}\n")
+
+        return platform
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
