@@ -9,14 +9,19 @@ echo Ripping $DISCNAME
 ./cdrdao read-cd --read-raw --datafile $DISCNAME.bin --device /dev/sr0 --driver generic-mmc-raw $DISCNAME.toc
 ./toc2cue $DISCNAME.toc $DISCNAME.cue
 
-# if the CUE contains AUDIO tracks
-if [ `grep -e AUDIO $DISCNAME.cue | wc -l` -gt 0 ]; then
+# if the CUE contains multiple tracks
+if [ `grep -e TRACK $DISCNAME.cue | wc -l` -gt 0 ]; then
 	# Split the BIN file
-	echo "Audio tracks detected. Splitting BIN/CUE. This may take a long time if there are many audio tracks..."
+	echo "Multiple tracks detected. Splitting BIN/CUE. This may take a long time if there are many audio tracks..."
 	./binmerge -s $DISCNAME.cue $DISCNAME -o ./output
 	rm $DISCNAME.bin $DISCNAME.cue 
 	mv ./output/* .
-	AUDIOFLAG=
+	# check if CUE contains audio tracks
+	if [ `grep -e AUDIO $DISCNAME.cue | wc -l` -gt 0 ]; then
+		AUDIOFLAG=
+	else
+		AUDIOFLAG=--no-audio
+	fi
 else
 	AUDIOFLAG=--no-audio
 fi

@@ -41,15 +41,16 @@ def calculate_md5(file_path):
             md5.update(chunk)
     return md5.hexdigest()
 
-def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
+def parse_cue_file(source_cue_file_name, psx_db, saturn_db, audio_flag):
     platform = "PSX"
     """Parse and update the .cue file based on Redump database matching."""
-    source_cue_file = Path(source_cue_file)
-    destination_cue_file = Path(source_cue_file)
+    source_cue_file = Path(source_cue_file_name)
+    destination_cue_file = Path(source_cue_file_name.replace(".cue",".new.cue"))
     # if we can't get the name of the game we'll swap back to this temp_ version of
     # the file and update it
     track_count = 0
     binary_file = ""
+    renamed = False
 
     with source_cue_file.open("r") as input_file:
         lines = input_file.read().split("\n")
@@ -64,7 +65,7 @@ def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
                 md5sum = calculate_md5(source_cue_file)
                 psgame = psx_db.find(f'game/rom[@md5="{md5sum}"]/..')
                 satgame = saturn_db.find(f'game/rom[@md5="{md5sum}"]/..')
-                finalgame = psgame or satgame
+                finalgame = psgame if psgame is not None else satgame
                 if finalgame is not None:
                     if satgame is not None:
                         platform = "Saturn"
@@ -74,9 +75,10 @@ def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
                     game_name = finalgame.attrib["name"]
                     print(f"\n *** Found game in Redump database: {game_name} ***")
                     destination_cue_file = Path(f"{game_name}.cue")
+                    renamed = True
                 else:
                     # we're going with the original file, so make a backup copy before overwriting it
-                    shutil.copy(source_cue_file, f"{source_cue_file}.bak")
+                    game_name = os.path.splitext(source_cue_file_name)[0]
                 break
 
         with destination_cue_file.open("w") as output_file:
@@ -91,9 +93,9 @@ def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
                     track_count += 1
                     binary_file = line.split("\"")[1]
 
-                    new_track_name = f"{game_name} (Track {track_count}).bin" if audio_flag else f"{game_name}.bin"
+                    new_track_name = f"{game_name} (Track {track_count}).bin"
+                    print(f"New Track Name: {new_track_name}")
                     output_file.write(f'FILE "{new_track_name}" BINARY\n')
-                    shutil.copy(binary_file, new_track_name)
 
                 elif command == "TRACK":
                     track_number = parts[1]
@@ -104,7 +106,8 @@ def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
                         reverse_byte_order_16bit(binary_file, new_track_name, 352800)
                         os.remove(binary_file)
                     else:
-                        os.rename(binary_file, new_track_name)
+                        if binary_file != new_track_name:
+                            os.rename(binary_file, new_track_name)
 
                     output_file.write(f"  TRACK {track_number} {track_type}\n")
 
@@ -117,6 +120,10 @@ def parse_cue_file(source_cue_file, psx_db, saturn_db, audio_flag):
 
                     output_file.write(f"    INDEX {track_index} {index_time}\n")
 
+        if not renamed:
+            os.remove(source_cue_file_name)
+            shutil.copy(destination_cue_file, source_cue_file_name)
+            os.remove(destination_cue_file)
         return platform
 
 if __name__ == "__main__":
