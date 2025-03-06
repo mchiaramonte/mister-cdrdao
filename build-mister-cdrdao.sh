@@ -45,7 +45,7 @@ cp ./binmerge-repo/binmerge .
 cd cdrdao-repo
 git checkout master
 git pull
-autoreconf -fi
+./autogen.sh
 ./configure --host=arm-none-linux-gnueabihf
 make all
 
@@ -54,4 +54,4 @@ cp ./dao/cdrdao $STARTDIR
 cp ./utils/toc2cue $STARTDIR
 cd $STARTDIR
 bash ./getredumpdata.sh
-tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue ./psx.dat ./saturn.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh ./binmerge
+tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue *.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh ./binmerge
