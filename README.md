@@ -8,7 +8,7 @@ Currently, this is setup to build on Ubuntu in WSL and also Ubunto on an x86_64 
 
 ## build-mister-cdrdao.sh
 
-This script ensures that Linux is up-to-date and installs the necessary Ubuntu packages. It then retrieves and installs the ARM development tools (compiler, linker, etc.). After setting up the environment, the script downloads the cdrdao source code and compiles it using the appropriate ARM tools, producing executables compatible with Linux for MiSTer.
+This script ensures that Linux is up-to-date and installs the necessary Ubuntu packages. If you're building this with WSL on Windows, ensure you have Docker installed because it updates WSL so that it can properly use qemu to execute the ARM binaries built for CDRDAO. It then retrieves and installs the ARM development tools (compiler, linker, etc.). After setting up the environment, the script downloads the cdrdao source code and compiles it using the appropriate ARM tools, producing executables compatible with Linux for MiSTer.
 
 Currently, the script uses the latest code from the cdrdao github repo as well as the latest version of binmerge to split the BIN files, if necessary.
 
