@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 import hashlib
 from pathlib import Path
 import mmap
+import glob
 
 def reverse_byte_order_16bit(input_file, output_file, padding_bytes=0, chunk_size=4096):
     print(output_file, end='')
@@ -41,7 +42,7 @@ def calculate_md5(file_path):
             md5.update(chunk)
     return md5.hexdigest()
 
-def parse_cue_file(source_cue_file_name, psx_db, saturn_db, audio_flag):
+def parse_cue_file(source_cue_file_name, audio_flag):
     platform = "PSX"
     """Parse and update the .cue file based on Redump database matching."""
     source_cue_file = Path(source_cue_file_name)
@@ -61,18 +62,21 @@ def parse_cue_file(source_cue_file_name, psx_db, saturn_db, audio_flag):
             command = parts[0]
             
             if command == "FILE":
-                source_cue_file = line.split("\"")[1]
-                md5sum = calculate_md5(source_cue_file)
-                psgame = psx_db.find(f'game/rom[@md5="{md5sum}"]/..')
-                satgame = saturn_db.find(f'game/rom[@md5="{md5sum}"]/..')
-                finalgame = psgame if psgame is not None else satgame
-                if finalgame is not None:
-                    if satgame is not None:
-                        platform = "Saturn"
-                    else:
-                        platform = "PSX"
-                    
-                    game_name = finalgame.attrib["name"]
+                data_file = line.split("\"")[1]
+                md5sum = calculate_md5(data_file)
+                platform = "PSX"
+                platforms = glob.glob("*.dat")
+                # iterate through all the platform files to see if the game
+                # can be found via md5
+                for platform_file in platforms:
+                    root = ET.parse(platform_file).getroot()
+                    game = root.find(f'game/rom[@md5="{md5sum}"]/..')
+                    if game is not None:
+                        platform = os.path.splitext(platform_file)[0]
+                        break
+
+                if game is not None:
+                    game_name = game.attrib["name"]
                     print(f"\n *** Found game in Redump database: {game_name} ***")
                     destination_cue_file = Path(f"{game_name}.cue")
                     renamed = True
@@ -134,7 +138,5 @@ if __name__ == "__main__":
     cue_file = sys.argv[1]
     audio_flag = len(sys.argv) == 2  # Default to True if no second argument
 
-    psx_db = ET.parse("psx.dat").getroot()
-    saturn_db = ET.parse("saturn.dat").getroot()
-    print(f"Platform={parse_cue_file(cue_file, psx_db, saturn_db, audio_flag)}\n")
+    print(f"Platform={parse_cue_file(cue_file, audio_flag)}\n")
 

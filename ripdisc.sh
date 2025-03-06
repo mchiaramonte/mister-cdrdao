@@ -10,7 +10,7 @@ echo Ripping $DISCNAME
 ./toc2cue $DISCNAME.toc $DISCNAME.cue
 
 # if the CUE contains multiple tracks
-if [ `grep -e TRACK $DISCNAME.cue | wc -l` -gt 0 ]; then
+if [ `grep -e TRACK $DISCNAME.cue | wc -l` -gt 1 ]; then
 	# Split the BIN file
 	echo "Multiple tracks detected. Splitting BIN/CUE. This may take a long time if there are many audio tracks..."
 	./binmerge -s $DISCNAME.cue $DISCNAME -o ./output
