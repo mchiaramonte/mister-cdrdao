@@ -2,15 +2,10 @@
 
 STARTDIR=$PWD
 
-# Update and upgrade WSL if it's old
-sudo apt update && sudo apt upgrade -y
-
-# Install the necessary packages
-sudo apt-get install unzip build-essential git qemu-user libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf liblz4-tool bc curl gcc git libssl-dev libncurses5-dev lzop make u-boot-tools libgmp3-dev libmpc-dev -y
-
 # Get and unpack the ARM compiler tools for x64
-wget -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
+wget -q -c https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
 sudo tar xf gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz -C /opt
+rm gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
 
 # Setup the PATH to reference the newly unpacked tools.
 # IMPORTANT: This export is required for configure to pickup the ARM tools
@@ -39,7 +34,7 @@ cd binmerge-repo
 git checkout main
 git pull
 cd $STARTDIR
-cp ./binmerge-repo/binmerge .
+mv -v ./binmerge-repo/binmerge $STARTDIR/Scripts/.config/mister-cdrdao
 
 # Go into the cdrdao-repo directory and configure the build to run for ARM Linux
 cd cdrdao-repo
@@ -49,9 +44,14 @@ git pull
 ./configure --host=arm-none-linux-gnueabihf
 make all
 
-# Fetch the necessary files and package
-cp ./dao/cdrdao $STARTDIR
-cp ./utils/toc2cue $STARTDIR
+mv -v \
+  ./dao/cdrdao \
+  ./utils/toc2cue  \
+  $STARTDIR/Scripts/.config/mister-cdrdao
+
 cd $STARTDIR
-bash ./getredumpdata.sh
-tar cvfz ./mister-cdrdao.tar.gz ./cdrdao ./toc2cue *.dat ./getredumpdata.sh ./processcue.py ./ripdisc.sh ./binmerge
+bash .github/getredumpdata.sh
+cd $STARTDIR
+mv -v *.dat $STARTDIR/Scripts/.config/mister-cdrdao
+rm -rf binmerge-repo cdrdao-repo
+find Scripts
