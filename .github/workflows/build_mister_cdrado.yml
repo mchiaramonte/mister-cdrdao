@@ -46,6 +46,11 @@ jobs:
         unzip
 
     - name: Build CDRDAO
+      env:
+        CDRDAO_VERSION: 1.2.5
+        CDRDAO_RELEASE: rel_1_2_5
+        BINMERGE_VERSION: 1.0.3
+        GCC_VERSION: 10.2-2020.11
       run: >
         .github/build-mister-cdrdao.sh
 
