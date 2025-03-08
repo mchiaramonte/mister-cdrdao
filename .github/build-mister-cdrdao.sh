@@ -28,7 +28,6 @@ tar xf cdrdao-${CDRDAO_VERSION}.tar.bz2
 
 # Go into the cdrdao-repo directory and configure the build to run for ARM Linux
 cd cdrdao-${CDRDAO_VERSION}
-./autogen.sh
 ./configure --host=arm-none-linux-gnueabihf
 make all
 
