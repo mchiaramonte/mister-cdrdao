@@ -39,9 +39,11 @@ mv -v \
 cd $STARTDIR
 rm -rf cdrdao-${CDRDAO_VERSION} cdrdao-${CDRDAO_VERSION}.tar.bz2
 
-for system in PSX Saturn MegaCD TGFX16-CD NeoGeo-CD; do
+for target in PSX:psx Saturn:ss MegaCD:mcd TGFX16-CD:pcecd NeoGeo-CD:ngcd; do
+  system = `echo $target | cut -f1 -d:`
+  url = `echo $target | cut -f2 -d:`
   echo "==> Downloading ${system} dat file..."
-  wget -q http://redump.org/datfile/psx/ -O ${system}.zip
+  wget -q http://redump.org/datfile/${url}/ -O ${system}.zip
   unzip -p ${system}.zip > $STARTDIR/Scripts/.config/mister-cdrdao/${system}.dat
   rm ${system}.zip
 done
