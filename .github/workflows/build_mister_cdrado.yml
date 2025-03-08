@@ -1,0 +1,70 @@
+name: Build CDRDAO for MiSTer
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  build_mister_cdrado:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install apt-get utilities
+      run: >
+        sudo apt update &&
+        sudo apt-get install -y -qq
+        autoconf
+        bc
+        bison
+        build-essential
+        curl
+        flex
+        gcc
+        git
+        libelf-dev
+        libgmp3-dev
+        libiberty-dev
+        liblz4-tool
+        libmpc-dev
+        libncurses-dev
+        libncurses5-dev
+        libpci-dev
+        libssl-dev
+        libssl-dev
+        libudev-dev
+        lzop
+        make
+        openssl
+        qemu-user
+        sharutils
+        u-boot-tools
+        unzip
+
+    - name: Build CDRDAO
+      env:
+        CDRDAO_VERSION: 1.2.5
+        CDRDAO_RELEASE: rel_1_2_5
+        BINMERGE_VERSION: 1.0.3
+        GCC_VERSION: 10.2-2020.11
+      run: >
+        .github/build-mister-cdrdao.sh
+
+    - name: Commit and push changes
+      uses: devops-infra/action-commit-push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: Updated Scripts directory
+
+    - name: Build Custom Database for MiSTer Downloader
+      run: >
+        sudo chown -R runner .git ;
+        set -o pipefail
+        && curl --fail --location https://raw.githubusercontent.com/theypsilon/Downloader_DB-Template_MiSTer/main/.github/build_db.py
+        | python3 -
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

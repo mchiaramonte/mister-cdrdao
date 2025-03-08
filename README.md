@@ -2,25 +2,16 @@
 
 This project helps you rip discs for the MiSTer FPGA system. Specifically, it simplifies the process of building cdrdao for Linux on the MiSTer FPGA. It does not include the source code for cdrdao or any of the redump data. Instead, it retrieves the necessary resources to build a cdrdao binary and packages it with its helper scripts and redump data files it into a .tar.gz file, ready for transfer to your MiSTer. This should work for most discs, including discs which have audio tracks. It will not produce dumps that are exact to redump standards, but it the data file (track 1) md5 should match what's in the redump database so that the files can be renamed properly and platform can be detected. This discrepency is likely due to the way I'm padding the audio tracks compared to how MPF and related tools does this for redump. The content of the audio files appears to match, in all cases, against the verified dumps that I produce with my Plextor drive, but the padding is apparently off enough that you end up with something that's not 100% md5 equivalent. This may be fixed in the future.
 
-## Requirements
+## Setup
 
-Currently, this is setup to build on Ubuntu in WSL and also Ubunto on an x86_64 Linux machine. Other platforms will be investigated as needed.
+Add the following to `/media/fat/downloader.ini` on your MiSTer:
 
-## build-mister-cdrdao.sh
+```ini
+[mchiaramonte/mister-cdrdao]
+db_url = https://raw.githubusercontent.com/mchiaramonte/mister-cdrdao/db/db.json.zip
+```
 
-This script ensures that Linux is up-to-date and installs the necessary Ubuntu packages. If you're building this with WSL on Windows, ensure you have Docker installed because it updates WSL so that it can properly use qemu to execute the ARM binaries built for CDRDAO (hopefully I'll figure out what it's doing when it resets the integration so that this can be part of the build script, at some point). It then retrieves and installs the ARM development tools (compiler, linker, etc.). After setting up the environment, the script downloads the cdrdao source code and compiles it using the appropriate ARM tools, producing executables compatible with Linux for MiSTer.
-
-Currently, the script uses the latest code from the cdrdao github repo as well as the latest version of binmerge to split the BIN files, if necessary.
-
-Error checking is minimal at the moment, but enhancements are planned to better capture failures and reduce the need for user troubleshooting.
-
-The final output of this script is `mister-cdrdao.tar.gz`.
-
-Run this by simply executing:
-
-`bash ./build-mister-cdrdao.sh`
-
-and it should take care of the rest
+Then run `update` or `update_all` from the `Scripts` menu on your MiSTer.
 
 ## ripdisc.sh
 
