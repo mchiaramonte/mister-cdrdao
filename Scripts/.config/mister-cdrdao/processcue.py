@@ -65,14 +65,14 @@ def parse_cue_file(source_cue_file_name, audio_flag):
                 data_file = line.split("\"")[1]
                 md5sum = calculate_md5(data_file)
                 platform = "PSX"
-                platforms = glob.glob("*.dat")
+                platforms = glob.glob("./.config/mister-cdrdao/*.dat")
                 # iterate through all the platform files to see if the game
                 # can be found via md5
                 for platform_file in platforms:
                     root = ET.parse(platform_file).getroot()
                     game = root.find(f'game/rom[@md5="{md5sum}"]/..')
                     if game is not None:
-                        platform = os.path.splitext(platform_file)[0]
+                        platform = os.path.splitext(platform_file)[0].split("/")[-1]
                         break
 
                 if game is not None:
