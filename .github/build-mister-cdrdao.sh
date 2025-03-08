@@ -40,8 +40,8 @@ cd $STARTDIR
 rm -rf cdrdao-${CDRDAO_VERSION} cdrdao-${CDRDAO_VERSION}.tar.bz2
 
 for target in PSX:psx Saturn:ss MegaCD:mcd TGFX16-CD:pcecd NeoGeo-CD:ngcd; do
-  system = `echo $target | awk -F: '{print $1}'`
-  url = `echo $target | awk -F: '{print $2}'`
+  system=`echo $target | awk -F: '{print $1}'`
+  url=`echo $target | awk -F: '{print $2}'`
   echo "==> Downloading ${system} dat file..."
   wget -q http://redump.org/datfile/${url}/ -O ${system}.zip
   unzip -p ${system}.zip > $STARTDIR/Scripts/.config/mister-cdrdao/${system}.dat
