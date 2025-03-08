@@ -39,7 +39,7 @@ mv -v \
 cd $STARTDIR
 rm -rf cdrdao-${CDRDAO_VERSION} cdrdao-${CDRDAO_VERSION}.tar.bz2
 
-for target in PSX:psx Saturn:ss MegaCD:mcd TGFX16-CD:pcecd NeoGeo-CD:ngcd; do
+for target in PSX:psx Saturn:ss MegaCD:mcd TGFX16-CD:pce NeoGeo-CD:ngcd; do
   system=`echo $target | awk -F: '{print $1}'`
   url=`echo $target | awk -F: '{print $2}'`
   echo "==> Downloading ${system} dat file..."
