@@ -15,5 +15,5 @@ Then run `update` or `update_all` from the `Scripts` menu on your MiSTer.
 
 ## ripdisc.sh
 
-This script uses cdrdao to rip the disc to the current directory, naming the CUE/BIN files after the disc label. If no label is found, the files will default to `unknown`. binmerge is used to split the BIN file and create an updated CUE file if the file has multiple tracks (i.e. mixed mode data and audio). processcue.py processes audio tracks to fix them because they're not padded and have their byte order backwards. If the track 1 md5 matches the checksum in the redump file for either Playstation 1 or Saturn, the whole BIN/CUE collection is renamed to that game accordingly.
+This script uses cdrdao to rip the disc to the current directory, naming the CUE/BIN files after the disc label. If no label is found, the files will default to `unknown`. binmerge is used to split the BIN file and create an updated CUE file if the file has multiple tracks (i.e. mixed mode data and audio). processcue.py processes audio tracks to fix them because they're not padded and have their byte order backwards. If any track md5 matches the checksum in the redump file for included system dat files, the whole BIN/CUE collection is renamed to that game accordingly.
 
