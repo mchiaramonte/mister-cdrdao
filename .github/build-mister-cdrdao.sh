@@ -21,7 +21,7 @@ sudo ln -s /opt/gcc-arm-${GCC_VERSION}-x86_64-arm-none-linux-gnueabihf/arm-none-
 wget -q https://github.com/putnam/binmerge/releases/download/${BINMERGE_VERSION}/binmerge-${BINMERGE_VERSION}.zip
 unzip binmerge-${BINMERGE_VERSION}.zip
 mv -v binmerge-${BINMERGE_VERSION}/binmerge $STARTDIR/Scripts/.config/mister-cdrdao
-rm -rf binmerge-${BINMERGE_VERSION} ${BINMERGE_VERSION}.zip
+rm -rf binmerge-${BINMERGE_VERSION} binmerge-${BINMERGE_VERSION}.zip
 
 wget -q https://github.com/cdrdao/cdrdao/releases/download/${CDRDAO_RELEASE}/cdrdao-${CDRDAO_VERSION}.tar.bz2
 tar xf cdrdao-${CDRDAO_VERSION}.tar.bz2
