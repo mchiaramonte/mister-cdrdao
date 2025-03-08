@@ -22,7 +22,6 @@ jobs:
         bc
         bison
         build-essential
-        coreutils
         curl
         flex
         gcc
