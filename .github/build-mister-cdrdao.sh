@@ -3,6 +3,9 @@ set -euo pipefail
 
 STARTDIR=$PWD
 
+# enable ARM support
+sudo update-binfmts --enable qemu-arm
+
 # Get and unpack the ARM compiler tools for x64
 wget -q -c https://developer.arm.com/-/media/Files/downloads/gnu-a/${GCC_VERSION}/binrel/gcc-arm-${GCC_VERSION}-x86_64-arm-none-linux-gnueabihf.tar.xz
 sudo tar xf gcc-arm-${GCC_VERSION}-x86_64-arm-none-linux-gnueabihf.tar.xz -C /opt
