@@ -18,7 +18,7 @@ jobs:
       run: >
         sudo apt update &&
         sudo apt-get install -y -qq
-        binfmt_support
+        binfmt-support
         qemu-user-static
         autoconf
         bc
