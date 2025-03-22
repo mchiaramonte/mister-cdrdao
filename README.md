@@ -11,7 +11,7 @@ Add the following to `/media/fat/downloader.ini` on your MiSTer:
 db_url = https://raw.githubusercontent.com/mchiaramonte/mister-cdrdao/db/db.json.zip
 ```
 
-Then run `update` or `update_all` from the `Scripts` menu on your MiSTer.
+Then run `update` or `update_all` from the `Scripts` menu on your MiSTer. If you've never done this before, be sure to also add `[distribution_mister]` to the downloader.ini file so that you continue to download other content just as you did before creating this file.
 
 ## ripdisc.sh
 
