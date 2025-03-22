@@ -4,7 +4,7 @@ set -euo pipefail
 STARTDIR=$PWD
 
 # enable ARM support
-sudo update-binfmts --enable qemu-arm
+sudo update-binfmts --install qemu-arm /usr/local/bin/qemu-arm-static --magic "\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x28\x00" --mask "\xff\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff"
 
 # Get and unpack the ARM compiler tools for x64
 wget -q -c https://developer.arm.com/-/media/Files/downloads/gnu-a/${GCC_VERSION}/binrel/gcc-arm-${GCC_VERSION}-x86_64-arm-none-linux-gnueabihf.tar.xz
