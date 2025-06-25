@@ -3,9 +3,9 @@
 <datafile>
 	<header>
 		<name>Sega - Mega CD &amp; Sega CD</name>
-		<description>Sega - Mega CD &amp; Sega CD - Discs (543) (2025-01-21 01-49-15)</description>
-		<version>2025-01-21 01-49-15</version>
-		<date>2025-01-21 01-49-15</date>
+		<description>Sega - Mega CD &amp; Sega CD - Discs (543) (2025-06-21 03-45-38)</description>
+		<version>2025-06-21 03-45-38</version>
+		<date>2025-06-21 03-45-38</date>
 		<author>redump.org</author>
 		<homepage>redump.org</homepage>
 		<url>http://redump.org/</url>
@@ -891,7 +891,7 @@
 	<game name="Yumemi Yakata no Monogatari (Japan)">
 		<category>Games</category>
 		<description>Yumemi Yakata no Monogatari (Japan)</description>
-		<rom name="Yumemi Yakata no Monogatari (Japan).cue" size="240" crc="e9b007a4" md5="b4338ded09a542d8ef761045dabefba3" sha1="3afd7340413845bcd79f00f197229ce89e99a755"/>
+		<rom name="Yumemi Yakata no Monogatari (Japan).cue" size="263" crc="fe8993c1" md5="028fa6c68019e0d933d3fac837599440" sha1="2726bcc1916d5e7b14b2b42631569dca9b3c587b"/>
 		<rom name="Yumemi Yakata no Monogatari (Japan) (Track 1).bin" size="625389744" crc="e491e189" md5="fcc0915d6bb80c64c81b65bc0a943366" sha1="483aa4469a9e579ed99803c5eb9cf70d1f15f836"/>
 		<rom name="Yumemi Yakata no Monogatari (Japan) (Track 2).bin" size="7190064" crc="1d6aa9a6" md5="671cdd8789032ac9a22744682cb07146" sha1="b2a2eaf5762a4765c493760e6a647e21067cbee2"/>
 	</game>
@@ -4548,27 +4548,27 @@
 		<rom name="Terminator, The (Europe) (Track 09).bin" size="17110800" crc="394c8c01" md5="9207e0a1d70c00a6e28a0aaaf2c7db55" sha1="3068af52d6f749d3c13b0e1fa08266ff4b58a5d3"/>
 		<rom name="Terminator, The (Europe) (Track 10).bin" size="39513600" crc="8416253d" md5="1958b1b93ea1d2a928848b2f95ce2b14" sha1="280401d728cff72fdecce61dce242d94f5f662a9"/>
 	</game>
-	<game name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es)">
+	<game name="Bloodshot (Europe) (En,Fr,De,Es)">
 		<category>Games</category>
-		<description>Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es)</description>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es).cue" size="2436" crc="71bf0ddb" md5="a37a042f7f8f7fc5d26b9b4146fee91f" sha1="d117d505045857cfc74852ed592f92fcd68281c5"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 01).bin" size="7542864" crc="bd7ef798" md5="7283292740b3b9f2c5c55b30f8cfbeda" sha1="ae7713a336417d92f23fd96e9bb3321d59ed9b31"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 02).bin" size="45791088" crc="31d35fcc" md5="3e69165bf309f392d72b3c2ec11f671a" sha1="c04b0972187370efb072233b00003879c6eb2c18"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 03).bin" size="33626544" crc="728b4e4a" md5="f6a8a5a56f929638f440fe5ad25af93b" sha1="5dc263e69112a54dfa968ed1a8eaebe2be625937"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 04).bin" size="2916480" crc="256d13ba" md5="f5be6eb22e25722fb158fa23300b4eb7" sha1="6b5f0e37d4bb3d93179750cb24ca0b3ec60c5ccc"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 05).bin" size="15854832" crc="1db370f9" md5="b868e5c576d0f04826d30effc7dfb98b" sha1="01835560862d270f6e29aa4fcb320677e2761069"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 06).bin" size="18787776" crc="23d8ba34" md5="41dd411974912534d2108c148fdc573c" sha1="5d0410feafaf5415b4b4ffcd9b781466c5fd569f"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 07).bin" size="32688096" crc="889ee2f5" md5="f402d0226e1090c4fccbad96827eacc9" sha1="9a1b0a4b450a5076513674b0e47197bbc97466cf"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 08).bin" size="60225312" crc="87ae30f4" md5="b39d7fdf2d31d99c0d6c4d4f8113616f" sha1="94a2a5cc5f807e71efbde7f7c479b26d7ab4ee00"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 09).bin" size="51052512" crc="d75b9f8e" md5="d632fd83c5eeeadfaf74178682acda14" sha1="8e4c80bb467d6fba47ebc8f891c911e25642438d"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 10).bin" size="46383792" crc="5757cd6b" md5="10e4e712fa6b6bef5a8bed8286264e79" sha1="ce422cd80a00923288d8558d4defa59124fc0cff"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 11).bin" size="60808608" crc="4b93f2e6" md5="56ec85bca28985184f2b20bd28c2f018" sha1="a707162077608431394a2598912d8763b7114453"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 12).bin" size="38878560" crc="3ffdb762" md5="779e332145f501726e68ab1cc241f004" sha1="cd4837a6f6feb88a3d7690f28005c8d815144739"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 13).bin" size="48528816" crc="78b9feb9" md5="d262dedb55501d84f9ef59152fd85706" sha1="077bd69a6479017ee7f3d325a319fa2b70ac7102"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 14).bin" size="3986640" crc="2df6616e" md5="a94650f553dcfd56f70ca22935ab3b6b" sha1="13c7ced2359441c5e3ac17957e25c71fd36dcef4"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 15).bin" size="6256320" crc="6afb0ea1" md5="ff7f2e32dd07b9ad184c8628a5efc843" sha1="64d86a967b65050805775eba28a5257a64b8cac0"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 16).bin" size="60603984" crc="4bf52465" md5="dc27bc0c6e0c3400b2026d024f577426" sha1="315e7cca0e903c51699475db80e5ecb86353f2d5"/>
-		<rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es) (Track 17).bin" size="65667840" crc="259fe2ab" md5="b10b6bc4606f3953abf8eed94cb78080" sha1="ad45d37d83192a468e35cf7f0d2c785c3302951c"/>
+		<description>Bloodshot (Europe) (En,Fr,De,Es)</description>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es).cue" size="2164" crc="8485532b" md5="0707b47e08e99ec5f77328c5afed73a6" sha1="d99f2754ea8ffcdfe00e14b99c930fe03b5f82c1"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 01).bin" size="7542864" crc="bd7ef798" md5="7283292740b3b9f2c5c55b30f8cfbeda" sha1="ae7713a336417d92f23fd96e9bb3321d59ed9b31"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 02).bin" size="45791088" crc="31d35fcc" md5="3e69165bf309f392d72b3c2ec11f671a" sha1="c04b0972187370efb072233b00003879c6eb2c18"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 03).bin" size="33626544" crc="728b4e4a" md5="f6a8a5a56f929638f440fe5ad25af93b" sha1="5dc263e69112a54dfa968ed1a8eaebe2be625937"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 04).bin" size="2916480" crc="256d13ba" md5="f5be6eb22e25722fb158fa23300b4eb7" sha1="6b5f0e37d4bb3d93179750cb24ca0b3ec60c5ccc"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 05).bin" size="15854832" crc="1db370f9" md5="b868e5c576d0f04826d30effc7dfb98b" sha1="01835560862d270f6e29aa4fcb320677e2761069"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 06).bin" size="18787776" crc="23d8ba34" md5="41dd411974912534d2108c148fdc573c" sha1="5d0410feafaf5415b4b4ffcd9b781466c5fd569f"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 07).bin" size="32688096" crc="889ee2f5" md5="f402d0226e1090c4fccbad96827eacc9" sha1="9a1b0a4b450a5076513674b0e47197bbc97466cf"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 08).bin" size="60225312" crc="87ae30f4" md5="b39d7fdf2d31d99c0d6c4d4f8113616f" sha1="94a2a5cc5f807e71efbde7f7c479b26d7ab4ee00"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 09).bin" size="51052512" crc="d75b9f8e" md5="d632fd83c5eeeadfaf74178682acda14" sha1="8e4c80bb467d6fba47ebc8f891c911e25642438d"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 10).bin" size="46383792" crc="5757cd6b" md5="10e4e712fa6b6bef5a8bed8286264e79" sha1="ce422cd80a00923288d8558d4defa59124fc0cff"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 11).bin" size="60808608" crc="4b93f2e6" md5="56ec85bca28985184f2b20bd28c2f018" sha1="a707162077608431394a2598912d8763b7114453"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 12).bin" size="38878560" crc="3ffdb762" md5="779e332145f501726e68ab1cc241f004" sha1="cd4837a6f6feb88a3d7690f28005c8d815144739"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 13).bin" size="48528816" crc="78b9feb9" md5="d262dedb55501d84f9ef59152fd85706" sha1="077bd69a6479017ee7f3d325a319fa2b70ac7102"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 14).bin" size="3986640" crc="2df6616e" md5="a94650f553dcfd56f70ca22935ab3b6b" sha1="13c7ced2359441c5e3ac17957e25c71fd36dcef4"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 15).bin" size="6256320" crc="6afb0ea1" md5="ff7f2e32dd07b9ad184c8628a5efc843" sha1="64d86a967b65050805775eba28a5257a64b8cac0"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 16).bin" size="60603984" crc="4bf52465" md5="dc27bc0c6e0c3400b2026d024f577426" sha1="315e7cca0e903c51699475db80e5ecb86353f2d5"/>
+		<rom name="Bloodshot (Europe) (En,Fr,De,Es) (Track 17).bin" size="65667840" crc="259fe2ab" md5="b10b6bc4606f3953abf8eed94cb78080" sha1="ad45d37d83192a468e35cf7f0d2c785c3302951c"/>
 	</game>
 	<game name="Bouncers (USA)">
 		<category>Games</category>

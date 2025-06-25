@@ -3,9 +3,9 @@
 <datafile>
 	<header>
 		<name>NEC - PC Engine CD &amp; TurboGrafx CD</name>
-		<description>NEC - PC Engine CD &amp; TurboGrafx CD - Discs (548) (2024-12-16 01-43-02)</description>
-		<version>2024-12-16 01-43-02</version>
-		<date>2024-12-16 01-43-02</date>
+		<description>NEC - PC Engine CD &amp; TurboGrafx CD - Discs (550) (2025-06-24 17-43-33)</description>
+		<version>2025-06-24 17-43-33</version>
+		<date>2025-06-24 17-43-33</date>
 		<author>redump.org</author>
 		<homepage>redump.org</homepage>
 		<url>http://redump.org/</url>
@@ -3058,22 +3058,22 @@
 		<rom name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 6) (Track 5).bin" size="34369776" crc="c2cb107f" md5="2d45e5f98de8bbf247e86bf0e439bfc8" sha1="164d2402035f0bf002177a0bec6bcc2b6501a006"/>
 		<rom name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 6) (Track 6).bin" size="148288896" crc="2705e12f" md5="f21249a90b766e3681564527c86cf8c6" sha1="e4470578da84b68f5fbf674cddb2fd70a006eae9"/>
 	</game>
-	<game name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan)">
+	<game name="Battle Shanghai - Dragon's Eye (Japan)">
 		<category>Games</category>
-		<description>Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan)</description>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan).cue" size="1782" crc="de6a2ae7" md5="6c99f3b313864669d3931034244b75f0" sha1="6fbd581406dcf697a51337b0926875580b4c547a"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 01).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 02).bin" size="4379424" crc="74475bf0" md5="ebc7f7753ed51839b76a93a7d6d76e91" sha1="aec0bd8ce5e44149180731da3df7a551ee28550e"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 03).bin" size="5329632" crc="20af3bce" md5="ab4a74738ee288ab8817dd4e10637818" sha1="d02225397a9a4734a5f6ec20da59a5c5b17b02d4"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 04).bin" size="67575312" crc="38adb7b0" md5="2b7562f760e101e480e3640acf8ec944" sha1="a42a70822d3b76a63b1821f1e2342d3da1e3b6e9"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 05).bin" size="3429216" crc="4dff7977" md5="b8ed8cc708b9a2fe633798f82c94f45e" sha1="ae9e3a071a337f94980f937f50aabd7b5b153e3f"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 06).bin" size="91104720" crc="a3c0cbcd" md5="1f2950aac1b12a8511501a873ae6e96a" sha1="fb7a3b28a02aa3d94a85d8d31a6f4a1d494ba6e3"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 07).bin" size="39894624" crc="fb48ab6e" md5="77cbee73d42e9f1ca8839fe174b5ac43" sha1="1fb78efcdeceab3608a17bc8ce7695d97a89e64e"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 08).bin" size="924336" crc="f4c692de" md5="5e829bc439b9d9e8f5649b20349bc7d5" sha1="f7b90f7bee25d311b7221aea570a4ecb9afc3638"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 09).bin" size="102431952" crc="55c063c7" md5="e402be2b3bbf4a7cc7b869832cc505aa" sha1="20fb1bc720781e3428f35c66f9bc440c232dab1c"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 10).bin" size="1818096" crc="e4108967" md5="8e2903f4d0a639c4c131a48a6288ba7f" sha1="0bba5f65558b355270e7f1d93b7251e677211e7d"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 11).bin" size="2587200" crc="607671f7" md5="6d5f28ebcb90b9b945595afc06b9e93a" sha1="f7e2d5002385a567a5fb56392f10be16ac5df58c"/>
-		<rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan) (Track 12).bin" size="4028976" crc="520643d0" md5="de007ac810df92a694a4bc15716f7784" sha1="d5c1f40fd1968431fddb572e730f14f5c8b8e0d8"/>
+		<description>Battle Shanghai - Dragon's Eye (Japan)</description>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan).cue" size="1422" crc="9366461a" md5="50076d3053a3836840f020396be2c7ed" sha1="12979b4a7921828180ba491c262589e41d85204f"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 01).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 02).bin" size="4379424" crc="74475bf0" md5="ebc7f7753ed51839b76a93a7d6d76e91" sha1="aec0bd8ce5e44149180731da3df7a551ee28550e"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 03).bin" size="5329632" crc="20af3bce" md5="ab4a74738ee288ab8817dd4e10637818" sha1="d02225397a9a4734a5f6ec20da59a5c5b17b02d4"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 04).bin" size="67575312" crc="38adb7b0" md5="2b7562f760e101e480e3640acf8ec944" sha1="a42a70822d3b76a63b1821f1e2342d3da1e3b6e9"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 05).bin" size="3429216" crc="4dff7977" md5="b8ed8cc708b9a2fe633798f82c94f45e" sha1="ae9e3a071a337f94980f937f50aabd7b5b153e3f"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 06).bin" size="91104720" crc="a3c0cbcd" md5="1f2950aac1b12a8511501a873ae6e96a" sha1="fb7a3b28a02aa3d94a85d8d31a6f4a1d494ba6e3"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 07).bin" size="39894624" crc="fb48ab6e" md5="77cbee73d42e9f1ca8839fe174b5ac43" sha1="1fb78efcdeceab3608a17bc8ce7695d97a89e64e"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 08).bin" size="924336" crc="f4c692de" md5="5e829bc439b9d9e8f5649b20349bc7d5" sha1="f7b90f7bee25d311b7221aea570a4ecb9afc3638"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 09).bin" size="102431952" crc="55c063c7" md5="e402be2b3bbf4a7cc7b869832cc505aa" sha1="20fb1bc720781e3428f35c66f9bc440c232dab1c"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 10).bin" size="1818096" crc="e4108967" md5="8e2903f4d0a639c4c131a48a6288ba7f" sha1="0bba5f65558b355270e7f1d93b7251e677211e7d"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 11).bin" size="2587200" crc="607671f7" md5="6d5f28ebcb90b9b945595afc06b9e93a" sha1="f7e2d5002385a567a5fb56392f10be16ac5df58c"/>
+		<rom name="Battle Shanghai - Dragon's Eye (Japan) (Track 12).bin" size="4028976" crc="520643d0" md5="de007ac810df92a694a4bc15716f7784" sha1="d5c1f40fd1968431fddb572e730f14f5c8b8e0d8"/>
 	</game>
 	<game name="Human Sports Festival (Japan)">
 		<category>Games</category>
@@ -5240,23 +5240,23 @@
 		<rom name="Browning (Japan) (Track 26).bin" size="34800192" crc="05c01a22" md5="f2df1e8632ca0ed6637d7a373f5bcc89" sha1="35d5e8130eeb02122027876d23cdc5c879ca7261"/>
 		<rom name="Browning (Japan) (Track 27).bin" size="2808288" crc="03b00a08" md5="385bd2bc4bf997361f3bb7710b711167" sha1="b306bd28afabda67bd0a0ef203b71a8764b24689"/>
 	</game>
-	<game name="Campaign Version - Daisenryaku II (Japan)">
+	<game name="Daisenryaku II - Campaign Version (Japan)">
 		<category>Games</category>
-		<description>Campaign Version - Daisenryaku II (Japan)</description>
-		<rom name="Campaign Version - Daisenryaku II (Japan).cue" size="1543" crc="3a8d0d27" md5="068695cb83238b5748f300a93a0ef074" sha1="74a39f12c17de82e0617bc208af380b469fe1973"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 01).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 02).bin" size="10529904" crc="3ba90e6a" md5="bd0aedbbed5084e240547dce7d73be4c" sha1="47642cb3b4238c93406ce25efb22940b65a1026b"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 03).bin" size="14730576" crc="4da532d6" md5="cd37958d11cc63eee3865f120c627745" sha1="559e0202b283099197c1944733d9060494632f77"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 04).bin" size="35621040" crc="9816ebac" md5="9aa4cfe33058cbfe337bf1844f0776b9" sha1="092ffb2a5cfa8d2f53c61889ba6e3ebaa615b829"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 05).bin" size="35129472" crc="caf66c36" md5="7259b25c712f0336e3bee0956f18e444" sha1="eef0dab31989694cc2c05ace67f4706262d31bf0"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 06).bin" size="38584560" crc="ad34f60e" md5="1760acf5aa42ba9ca835028de75704ff" sha1="bd798753fb671d74dde40c72978bef78a0964dad"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 07).bin" size="10012464" crc="8dc892e8" md5="256c3a3321bdfe24586a3f8a7884e0d1" sha1="c1020a8c37e07c1d2f4fb94e52570c725c5d7974"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 08).bin" size="12863088" crc="3d275431" md5="54a4913ff37a1e70577e0475b747e313" sha1="f4d0877b6e94b0feae9d3e7512971950a3072f18"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 09).bin" size="9191616" crc="3257194b" md5="72e59f7cd5eb6f1ae837a1b317925356" sha1="4f1ae8821b00351ddf734d78ac0c70ba7d2f4e65"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 10).bin" size="11600064" crc="940b9a89" md5="b29ab886b7abcc5df6c7360f9df9802d" sha1="e6fe4f1e3b75e87f37e9fd02c13790819f83dfef"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 11).bin" size="13371120" crc="43d3875c" md5="3d605a6c032f7e1d1ecbfbaeb9ae2c97" sha1="8e8b126fbf4cd229929af6f60cc286e4060baed0"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 12).bin" size="13681584" crc="de332fac" md5="f0ef1f8fa5169b09b02b8712c30bba42" sha1="054bd17d16426dbbe11f56a0cee3ad01fbb7d94f"/>
-		<rom name="Campaign Version - Daisenryaku II (Japan) (Track 13).bin" size="14177856" crc="937fcd52" md5="398ed7d605d3ff9e589bade5aa587062" sha1="a8f9668d72e1618b9ff690596f520495249f51f9"/>
+		<description>Daisenryaku II - Campaign Version (Japan)</description>
+		<rom name="Daisenryaku II - Campaign Version (Japan).cue" size="1543" crc="a93bb417" md5="294de0ea8d3c65b12f696f5c8bcb52d6" sha1="a0749b8b00d04063a9e627f76569872d8d224efc"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 01).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 02).bin" size="10529904" crc="3ba90e6a" md5="bd0aedbbed5084e240547dce7d73be4c" sha1="47642cb3b4238c93406ce25efb22940b65a1026b"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 03).bin" size="14730576" crc="4da532d6" md5="cd37958d11cc63eee3865f120c627745" sha1="559e0202b283099197c1944733d9060494632f77"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 04).bin" size="35621040" crc="9816ebac" md5="9aa4cfe33058cbfe337bf1844f0776b9" sha1="092ffb2a5cfa8d2f53c61889ba6e3ebaa615b829"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 05).bin" size="35129472" crc="caf66c36" md5="7259b25c712f0336e3bee0956f18e444" sha1="eef0dab31989694cc2c05ace67f4706262d31bf0"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 06).bin" size="38584560" crc="ad34f60e" md5="1760acf5aa42ba9ca835028de75704ff" sha1="bd798753fb671d74dde40c72978bef78a0964dad"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 07).bin" size="10012464" crc="8dc892e8" md5="256c3a3321bdfe24586a3f8a7884e0d1" sha1="c1020a8c37e07c1d2f4fb94e52570c725c5d7974"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 08).bin" size="12863088" crc="3d275431" md5="54a4913ff37a1e70577e0475b747e313" sha1="f4d0877b6e94b0feae9d3e7512971950a3072f18"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 09).bin" size="9191616" crc="3257194b" md5="72e59f7cd5eb6f1ae837a1b317925356" sha1="4f1ae8821b00351ddf734d78ac0c70ba7d2f4e65"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 10).bin" size="11600064" crc="940b9a89" md5="b29ab886b7abcc5df6c7360f9df9802d" sha1="e6fe4f1e3b75e87f37e9fd02c13790819f83dfef"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 11).bin" size="13371120" crc="43d3875c" md5="3d605a6c032f7e1d1ecbfbaeb9ae2c97" sha1="8e8b126fbf4cd229929af6f60cc286e4060baed0"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 12).bin" size="13681584" crc="de332fac" md5="f0ef1f8fa5169b09b02b8712c30bba42" sha1="054bd17d16426dbbe11f56a0cee3ad01fbb7d94f"/>
+		<rom name="Daisenryaku II - Campaign Version (Japan) (Track 13).bin" size="14177856" crc="937fcd52" md5="398ed7d605d3ff9e589bade5aa587062" sha1="a8f9668d72e1618b9ff690596f520495249f51f9"/>
 	</game>
 	<game name="Winds of Thunder (Japan)">
 		<category>Games</category>
@@ -10660,12 +10660,12 @@
 		<rom name="Kiaidan 00 (Japan) (Track 36).bin" size="45226608" crc="f33aa839" md5="b77c3b60846f2ec60a8808e90bcd8931" sha1="8a4476fc693fb0a2907b3c79c7b795d71f577505"/>
 		<rom name="Kiaidan 00 (Japan) (Track 37).bin" size="44737392" crc="fcfb7c35" md5="35ce0a6a30be81743eba2be79eaaa8d8" sha1="63021e3e7e2d50ce3f7631db255e573722dc9649"/>
 	</game>
-	<game name="Tengai Makyou - Deden no Kabuki-den (Japan)">
+	<game name="Tengai Makyou - Deden no Den (Japan)">
 		<category>Games</category>
-		<description>Tengai Makyou - Deden no Kabuki-den (Japan)</description>
-		<rom name="Tengai Makyou - Deden no Kabuki-den (Japan).cue" size="279" crc="a8f29026" md5="0a980f25bf8846e14d4bc45eaa3ae065" sha1="2f9eba5231477f6c444f4cc64d6b1dc2458a0e9a"/>
-		<rom name="Tengai Makyou - Deden no Kabuki-den (Japan) (Track 1).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
-		<rom name="Tengai Makyou - Deden no Kabuki-den (Japan) (Track 2).bin" size="1521744" crc="8efbce5d" md5="275c8906ea744e31553568b412992ab1" sha1="1fcac0e62d31de7802154cd5ee3102b63d41bbe8"/>
+		<description>Tengai Makyou - Deden no Den (Japan)</description>
+		<rom name="Tengai Makyou - Deden no Den (Japan).cue" size="265" crc="f7276efa" md5="9ffa3da4042d5cfebf6e188ead45eafe" sha1="102922bd0ba08c382e4e3f9400488db095a3c4d4"/>
+		<rom name="Tengai Makyou - Deden no Den (Japan) (Track 1).bin" size="7916832" crc="22144d0f" md5="ad1067d0bcc2ffeea540d3b985c51188" sha1="3b472f5e80bbf8259e09f8e4f547567bddb02490"/>
+		<rom name="Tengai Makyou - Deden no Den (Japan) (Track 2).bin" size="1521744" crc="8efbce5d" md5="275c8906ea744e31553568b412992ab1" sha1="1fcac0e62d31de7802154cd5ee3102b63d41bbe8"/>
 	</game>
 	<game name="Kuusou Kagaku Sekai Gulliver Boy (Japan)">
 		<category>Games</category>
@@ -18406,6 +18406,23 @@
 		<rom name="Dungeon Master - Theron's Quest (USA) (RE) (Track 18).bin" size="13665120" crc="353d376e" md5="377040ae53bcbe180f1f4a96402e73f1" sha1="f20d939b09db38e604ab6e1bf0adb87e07082ecf"/>
 		<rom name="Dungeon Master - Theron's Quest (USA) (RE) (Track 19).bin" size="7754544" crc="43df0e38" md5="e5540ff6c59a290d7557694349025b49" sha1="34cf580ee7ec99cbc7240c6aeace8af6320c7334"/>
 	</game>
+	<game name="Jim Power in Mutant Planet (USA) (Unl)">
+		<category>Games</category>
+		<description>Jim Power in Mutant Planet (USA) (Unl)</description>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl).cue" size="1371" crc="292f579b" md5="0e6d193786a57acb97ac449de9675c5a" sha1="d808d55a3b26d8385fd078bf31a5bdff241b0d14"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 01).bin" size="7916832" crc="79afed08" md5="45ab5e2e7481c433d4044d69e82855da" sha1="67d8304e8b73c1a93d94e0d132a5a0a5b76c93f7"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 02).bin" size="4976832" crc="197006d6" md5="5c943d8ffc3937098689bee524c8cd0a" sha1="9db2f74f76395319b99b721201c822909b6ba8bb"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 03).bin" size="48244224" crc="8cd52de3" md5="8188cc4bfa8ba313cbc5e60abe915a76" sha1="e7825188054864efd3bc3da22f59d5a42676a9c1"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 04).bin" size="57264144" crc="31e40f95" md5="69bc49bf4745f2b5e41ac94e300c19e6" sha1="bb3f25da85fc1d4f0b97d1db026feaeedc96c983"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 05).bin" size="60573408" crc="9a3a980b" md5="96f1d50b3003cf3cb70dad1a12035fbd" sha1="1195ea5096cc42928b211b4d9954f42744916515"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 06).bin" size="70632912" crc="ed3d646c" md5="a6789f3a83c6f6b8363bcc859963c5bc" sha1="e83333d31e073234202581ab133854ca7151c99b"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 07).bin" size="62325648" crc="8e0d4456" md5="715faf0a8fd038a0267649167eeebb46" sha1="b30ebfc9a3c6ef498ed35b96aa781a0076aa8038"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 08).bin" size="59246880" crc="caca2313" md5="f9ca0bc495e478e7f4608e525445a493" sha1="031dd7ba1ea5d4c2de7471e6d109f21b3673d436"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 09).bin" size="58247280" crc="4d650069" md5="144d583c86de1a093472146813a882c1" sha1="6c3d8c8b746a25d5981609a4d2fbfe83da8609a7"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 10).bin" size="43107456" crc="56a68708" md5="cf2692da83702765671517f54b57f21b" sha1="61a2e8a5517b8a8a021de6e1d307bb47b0756ec6"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 11).bin" size="42058464" crc="a296e56d" md5="fbe1e84c7b829279bdc8581748c0d809" sha1="6b109f859e05133644d831f533217bbf7cb04b6a"/>
+		<rom name="Jim Power in Mutant Planet (USA) (Unl) (Track 12).bin" size="46684848" crc="d6de0ac4" md5="cd1bdb2c5790339a74d5433b8c6c673b" sha1="5a651e49dc7f98d0665babcd7bd348075bc9c5ba"/>
+	</game>
 	<game name="FX Unit Yuki - The Henshin Engine (USA) (Unl) (Demo)">
 		<category>Demos</category>
 		<description>FX Unit Yuki - The Henshin Engine (USA) (Unl) (Demo)</description>
@@ -18435,30 +18452,56 @@
 		<rom name="FX Unit Yuki - The Henshin Engine (USA) (Unl) (Demo) (Track 23).bin" size="21257376" crc="3f117979" md5="e1d4cc216b6f08906b8359b745f08cca" sha1="4628c85cd62fc5822ec6d7d3d3981a25175dbdad"/>
 		<rom name="FX Unit Yuki - The Henshin Engine (USA) (Unl) (Demo) (Track 24).bin" size="19933200" crc="760760b8" md5="d7aa27c6b3e9027c2eb3907e355543fd" sha1="56ccba3980c9ff47298ae2739b424af4fed073b2"/>
 	</game>
-	<game name="Legion (Japan) (Alt)">
+	<game name="Legion (Japan) (Rev 4) (Alt)">
 		<category>Games</category>
-		<description>Legion (Japan) (Alt)</description>
-		<rom name="Legion (Japan) (Alt).cue" size="1983" crc="f6febfc5" md5="6cc3d54390e6fa970d9245b95bfe63e5" sha1="e302fda076cb4d080f1edf23d10fb80f85427359"/>
-		<rom name="Legion (Japan) (Alt) (Track 01).bin" size="7914480" crc="3c73890d" md5="d80510a2348091411a158397e14a6fc2" sha1="334c39e04eecd1db16868aaa63dcfa5146eac073"/>
-		<rom name="Legion (Japan) (Alt) (Track 02).bin" size="2742432" crc="809da47c" md5="44dee4b8340c949847289c78bcf1a88f" sha1="ef7cb00c55dd7d57b8cc9c4a6cee27d6acfa0015"/>
-		<rom name="Legion (Japan) (Alt) (Track 03).bin" size="4793376" crc="375b19b8" md5="602ac21c055781184e1d48931d8fdc54" sha1="cfb2c9cac663080c9381ddc7c6ab34cc6245a561"/>
-		<rom name="Legion (Japan) (Alt) (Track 04).bin" size="4097184" crc="0c56cbf1" md5="9510dacd995f75ac0b91966477ea247e" sha1="13f1d1c1bd7b1a0c7600d31524a954be25c13059"/>
-		<rom name="Legion (Japan) (Alt) (Track 05).bin" size="5308464" crc="f3de2f51" md5="60e3204924a3d266c270e1b360c03a64" sha1="55dd4401a831c34c1d91a545167bcf223747fd74"/>
-		<rom name="Legion (Japan) (Alt) (Track 06).bin" size="5212032" crc="47023b55" md5="266f104d4f47f60cfdc0cf76d1ad9ab9" sha1="a427affe657d020b3d2d2f256c2dcd9e789288ab"/>
-		<rom name="Legion (Japan) (Alt) (Track 07).bin" size="3622080" crc="2c7de18b" md5="b992ed7b66f1a0d396ced6e74e884de7" sha1="493a01642f2749768a5b316deb24dd4f9ac8ac9a"/>
-		<rom name="Legion (Japan) (Alt) (Track 08).bin" size="5783568" crc="c4b2cd0b" md5="928697cef7143c251fc800fd8db3bb07" sha1="cc15e92b093570039e00fd45d30cb3b7f110cacc"/>
-		<rom name="Legion (Japan) (Alt) (Track 09).bin" size="5522496" crc="f1d3008e" md5="80a8e475be3617ec4496862366f3571a" sha1="d44a48c034921c26ab03f25ef27452922e1d1f31"/>
-		<rom name="Legion (Japan) (Alt) (Track 10).bin" size="5308464" crc="5e50814f" md5="d1355424239fab4995cabd03860bb002" sha1="6bd682597c28f26ecace3a7f58f9478fffc98e42"/>
-		<rom name="Legion (Japan) (Alt) (Track 11).bin" size="4440576" crc="76cfdf02" md5="7ac2d1bf9108bd6b0426b499fd074feb" sha1="24341faaeea723b25e291b337c7571b624592ca0"/>
-		<rom name="Legion (Japan) (Alt) (Track 12).bin" size="3720864" crc="e38f0369" md5="1c36f046852051b2cfa26044341e8666" sha1="a6970e52e8175b830408df77cbd3e14c192c9f43"/>
-		<rom name="Legion (Japan) (Alt) (Track 13).bin" size="1672272" crc="82b8f7c4" md5="539977fbe2764b5ed6e3ff873e86e577" sha1="3c181565470a3226bf5a71500409269e8f7d0fac"/>
-		<rom name="Legion (Japan) (Alt) (Track 14).bin" size="34783728" crc="2aa61137" md5="ee948d8fbb5302a886ece06afdf9708e" sha1="d71919c1d4fd0f20436bef6688e9e8778ddd2d5c"/>
-		<rom name="Legion (Japan) (Alt) (Track 15).bin" size="25248720" crc="03301b3a" md5="5758810f4a915741f53fb1da245b3e78" sha1="ff3119a08e74a10c9d14403bfc6cb129a65043e6"/>
-		<rom name="Legion (Japan) (Alt) (Track 16).bin" size="38158848" crc="f53808d7" md5="7f940ead06ecf134b4ceb017ce974a40" sha1="f68dfa9f63ec45bb6c0ed06a7c549ed3aea44804"/>
-		<rom name="Legion (Japan) (Alt) (Track 17).bin" size="34341552" crc="f1802c64" md5="d386e95bf1a790c5fccd2765ddda8347" sha1="b6e4c0d88cc5ea9d4627d2715f2b927c4737f76d"/>
-		<rom name="Legion (Japan) (Alt) (Track 18).bin" size="35898576" crc="a75e88df" md5="0d99589146e2b1d23598063ce8d31f67" sha1="870435a70bafb5f04097e333664b90bf3c903999"/>
-		<rom name="Legion (Japan) (Alt) (Track 19).bin" size="39913440" crc="80e0e28d" md5="6c4cf6067eec178043c67f1e85bc798f" sha1="2c47b7b0aa1d57913c7fc621c1db48c2e6c19ab5"/>
-		<rom name="Legion (Japan) (Alt) (Track 20).bin" size="32622240" crc="82108c28" md5="40f4ab85aece9caaa6cdbe703f1ba279" sha1="a37aef979f22637f1f5801703c9c8d9323d0da5a"/>
-		<rom name="Legion (Japan) (Alt) (Track 21).bin" size="45259536" crc="4a3d6106" md5="add0f8d088d20123fc47e5518413c0c5" sha1="36aeb338328250910c3064807ca305b034b92a50"/>
+		<description>Legion (Japan) (Rev 4) (Alt)</description>
+		<rom name="Legion (Japan) (Rev 4) (Alt).cue" size="2151" crc="4693abb6" md5="c698a362606bb25cced0b5cd3f3da1db" sha1="192e69987210a55ae42f6ad1fcf8ac12538bdd7e"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 01).bin" size="7914480" crc="3c73890d" md5="d80510a2348091411a158397e14a6fc2" sha1="334c39e04eecd1db16868aaa63dcfa5146eac073"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 02).bin" size="2742432" crc="809da47c" md5="44dee4b8340c949847289c78bcf1a88f" sha1="ef7cb00c55dd7d57b8cc9c4a6cee27d6acfa0015"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 03).bin" size="4793376" crc="375b19b8" md5="602ac21c055781184e1d48931d8fdc54" sha1="cfb2c9cac663080c9381ddc7c6ab34cc6245a561"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 04).bin" size="4097184" crc="0c56cbf1" md5="9510dacd995f75ac0b91966477ea247e" sha1="13f1d1c1bd7b1a0c7600d31524a954be25c13059"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 05).bin" size="5308464" crc="f3de2f51" md5="60e3204924a3d266c270e1b360c03a64" sha1="55dd4401a831c34c1d91a545167bcf223747fd74"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 06).bin" size="5212032" crc="47023b55" md5="266f104d4f47f60cfdc0cf76d1ad9ab9" sha1="a427affe657d020b3d2d2f256c2dcd9e789288ab"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 07).bin" size="3622080" crc="2c7de18b" md5="b992ed7b66f1a0d396ced6e74e884de7" sha1="493a01642f2749768a5b316deb24dd4f9ac8ac9a"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 08).bin" size="5783568" crc="c4b2cd0b" md5="928697cef7143c251fc800fd8db3bb07" sha1="cc15e92b093570039e00fd45d30cb3b7f110cacc"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 09).bin" size="5522496" crc="f1d3008e" md5="80a8e475be3617ec4496862366f3571a" sha1="d44a48c034921c26ab03f25ef27452922e1d1f31"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 10).bin" size="5308464" crc="5e50814f" md5="d1355424239fab4995cabd03860bb002" sha1="6bd682597c28f26ecace3a7f58f9478fffc98e42"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 11).bin" size="4440576" crc="76cfdf02" md5="7ac2d1bf9108bd6b0426b499fd074feb" sha1="24341faaeea723b25e291b337c7571b624592ca0"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 12).bin" size="3720864" crc="e38f0369" md5="1c36f046852051b2cfa26044341e8666" sha1="a6970e52e8175b830408df77cbd3e14c192c9f43"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 13).bin" size="1672272" crc="82b8f7c4" md5="539977fbe2764b5ed6e3ff873e86e577" sha1="3c181565470a3226bf5a71500409269e8f7d0fac"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 14).bin" size="34783728" crc="2aa61137" md5="ee948d8fbb5302a886ece06afdf9708e" sha1="d71919c1d4fd0f20436bef6688e9e8778ddd2d5c"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 15).bin" size="25248720" crc="03301b3a" md5="5758810f4a915741f53fb1da245b3e78" sha1="ff3119a08e74a10c9d14403bfc6cb129a65043e6"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 16).bin" size="38158848" crc="f53808d7" md5="7f940ead06ecf134b4ceb017ce974a40" sha1="f68dfa9f63ec45bb6c0ed06a7c549ed3aea44804"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 17).bin" size="34341552" crc="f1802c64" md5="d386e95bf1a790c5fccd2765ddda8347" sha1="b6e4c0d88cc5ea9d4627d2715f2b927c4737f76d"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 18).bin" size="35898576" crc="a75e88df" md5="0d99589146e2b1d23598063ce8d31f67" sha1="870435a70bafb5f04097e333664b90bf3c903999"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 19).bin" size="39913440" crc="80e0e28d" md5="6c4cf6067eec178043c67f1e85bc798f" sha1="2c47b7b0aa1d57913c7fc621c1db48c2e6c19ab5"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 20).bin" size="32622240" crc="82108c28" md5="40f4ab85aece9caaa6cdbe703f1ba279" sha1="a37aef979f22637f1f5801703c9c8d9323d0da5a"/>
+		<rom name="Legion (Japan) (Rev 4) (Alt) (Track 21).bin" size="45259536" crc="4a3d6106" md5="add0f8d088d20123fc47e5518413c0c5" sha1="36aeb338328250910c3064807ca305b034b92a50"/>
+	</game>
+	<game name="Meteor Blaster DX (USA) (Unl) (Alt)">
+		<category>Games</category>
+		<description>Meteor Blaster DX (USA) (Unl) (Alt)</description>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt).cue" size="2735" crc="de40fbbb" md5="f87ae679085e84b2b1b47f2764650209" sha1="fa740ca329585ddc5ee3ccb3c96d63d0edcfa343"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 01).bin" size="5049744" crc="c3dd7827" md5="8aed92b054e6cb8dcc59c4ec86f7bf76" sha1="4aece55ce93d3f52aba7297d0b3b3eec2506fb4e"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 02).bin" size="36105552" crc="aba046ac" md5="216c054180ce29385cabd365c6131710" sha1="078e2779cd32d397cab223ff411f1c56ffbfb91e"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 03).bin" size="40181568" crc="37d1d887" md5="5567836ebae13d6d0f5c97cf9ce797fa" sha1="75c7dea34c601d6e457a0c3fdfaf764123436558"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 04).bin" size="32034240" crc="2efd4881" md5="9f4c62aa47c93ade29e914870cfcb46f" sha1="fca63d86755677555fb1244a5c4de3e73c2da24f"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 05).bin" size="50805552" crc="7d506dc3" md5="1e07074f3957847825ad49f15d19124c" sha1="3b12ffe3cc548587cfa959fe565ad42a7b39690a"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 06).bin" size="35282352" crc="180285d9" md5="1aa65bd8067f1d461cad9b87aa28f909" sha1="b7157aa75d7183bd6540b5d71af319be9ce4cd7a"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 07).bin" size="28000560" crc="cd400ff0" md5="ef426382e573e8f15cf903bc2d4891a4" sha1="a53d76eefd60880965b37ffb9dd1462a6a143008"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 08).bin" size="42350112" crc="8a54f05f" md5="f3ab7190a23168c2a0508a69e60e28c7" sha1="1fcb732678b41dbbb7fa19016522b0e2e4df5ad3"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 09).bin" size="33516000" crc="f1673732" md5="abefe64152242f27532856d2559f72ab" sha1="8bce31bf6f032efd7ab66fd39a6ee0e7879d4c4b"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 10).bin" size="32441136" crc="4fba4c87" md5="71492b80dc435233845652b9e7abfbbe" sha1="e2692ccded80ab74d696f68c3ba67225ade19e9c"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 11).bin" size="41435184" crc="186b76bc" md5="3356df4d3e755c99db56cda81e1ca189" sha1="ff1643c5584b14e53490ebe4dcb0a7d9f73df68a"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 12).bin" size="39866400" crc="be62bdcd" md5="b6ba795d0f1d4d3a8e6602e43435ead4" sha1="6eb53eee8f65f1f127336b24947cc60260e2b006"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 13).bin" size="48187776" crc="71c57e30" md5="80b8625e02df6e0e55edb7e48acd6d08" sha1="68c9511e3af2a270a87410beb920f78c03e3b55a"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 14).bin" size="40572000" crc="f2374557" md5="c9d469eda1ea648fa5fdd435497df457" sha1="ff966f519897b7ceac16735846e3c77ecb249a67"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 15).bin" size="40541424" crc="8afe1996" md5="b2450acbadd0f0d2796907d91a30d33f" sha1="da826bf0f7d97feeb2345d48cbc7e06fcc8df4c4"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 16).bin" size="42336000" crc="1ca0fb93" md5="af251f70b1143b244351a234fc1bd345" sha1="e185e844d507114befc28eee543132c85a1766d5"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 17).bin" size="37984800" crc="df6a0963" md5="db11189b48784048edad49bd46164d20" sha1="758fa6402400d431c31a9f07ec9c5b9531bd6932"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 18).bin" size="38455200" crc="0c49c79d" md5="79883ffdcf3ad2c8db7366b9307a4522" sha1="87af6362927916df0b775a39825271599bc922da"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 19).bin" size="39062016" crc="e538d5f3" md5="60214636bc451d52f424e007ace534aa" sha1="8c883e7ee2028626100824315a54c53a8c2fa630"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 20).bin" size="39513600" crc="6a61b09a" md5="45fca02f1c66642e7a0d3e8123666fb4" sha1="77b8140e606b9918bf3504c27c12186f1a8f6eae"/>
+		<rom name="Meteor Blaster DX (USA) (Unl) (Alt) (Track 21).bin" size="27880608" crc="715dc737" md5="7c81df662276854fd808e6335dbdeaa2" sha1="2fc290e18b528405c2232767e8d0d6345d5a6d88"/>
 	</game>
 </datafile>

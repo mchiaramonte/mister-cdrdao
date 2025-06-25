@@ -3,9 +3,9 @@
 <datafile>
 	<header>
 		<name>SNK - Neo Geo CD</name>
-		<description>SNK - Neo Geo CD - Discs (111) (2025-03-10 07-50-51)</description>
-		<version>2025-03-10 07-50-51</version>
-		<date>2025-03-10 07-50-51</date>
+		<description>SNK - Neo Geo CD - Discs (111) (2025-06-09 23-44-36)</description>
+		<version>2025-06-09 23-44-36</version>
+		<date>2025-06-09 23-44-36</date>
 		<author>redump.org</author>
 		<homepage>redump.org</homepage>
 		<url>http://redump.org/</url>
@@ -1605,40 +1605,40 @@
 		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 23).bin" size="34684944" crc="c534a8ec" md5="6d10882c400b1b556f9f7a68ec93f3ef" sha1="71f8ff3e196a8abb8e670e558fd955b46be59d18"/>
 		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 24).bin" size="34569696" crc="3b094e2c" md5="1f2ce15e8fc6f246f1cd9b894770a8bf" sha1="81ce7de8815119cf5cd42b60636f8852dae0b355"/>
 		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 25).bin" size="34454448" crc="8989ae66" md5="1d3a1878f0a5de791141749a320d88ff" sha1="43798f7e0a76e88c4171eba052275323e13ed865"/>
-		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 26).bin" size="33826464" crc="37a9380a" md5="167eb654d9d24b83ae6ec4d6b3081133" sha1="3b6338e2309d8ebd59268ee099ae86419aa17385"/>
-		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 27).bin" size="30959376" crc="64b5378e" md5="14cdabbef8edb139507a211ea457efee" sha1="414b1d4e46b8ba1d36cdcbc907b3951df79c112c"/>
+		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 26).bin" size="34263936" crc="316da47c" md5="8fe193fa245b447aa50e89e85d607fd5" sha1="5d5d0582e1bbe330a0ccad33af63dab698e49410"/>
+		<rom name="Garou Densetsu Special ~ Fatal Fury Special (Japan) (En,Ja) (Track 27).bin" size="30521904" crc="3b794950" md5="0d15d716c6c4357249f39fcaaae56dac" sha1="2df95a27d6cdad49271ac4565789a6dae7d1a90f"/>
 	</game>
-	<game name="Choujin Gakuen - Gowcaizer (World) (En,Ja)">
+	<game name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja)">
 		<category>Games</category>
-		<description>Choujin Gakuen - Gowcaizer (World) (En,Ja)</description>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja).cue" size="3681" crc="9b43b816" md5="a2de1bee79d4e85995ff39f1f14c4e04" sha1="95526d9098ad74c3f1507ad0c30d8aa603e3beba"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 01).bin" size="70764624" crc="ca7abd60" md5="9afa77d76a9e3bee12ac86ea379a157a" sha1="35c22c128029cd2fb9b678066686fce61180a33a"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 02).bin" size="3398640" crc="9dd4d998" md5="88667b04327e7557d792509107bd1d96" sha1="f0f0329d324826d18103e25f6f42c0029e2a4b21"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 03).bin" size="4939200" crc="61ddc898" md5="23b192efc73c8f80f86fc37eb3ce76a2" sha1="d167d81e2a97cf827146f1fb8a7320cf924f1311"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 04).bin" size="4167744" crc="c35b5a8b" md5="18170d9a99d90f020ba7574775529dd1" sha1="667ef2ca368de7247846899e768671ab1f7bb408"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 05).bin" size="12251568" crc="21ec5d2e" md5="6ce33e6d6a77876c9687c9b73e09c70b" sha1="247b9ab7f424184e08c1a76556ecf7b8cc3d76bd"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 06).bin" size="13933248" crc="af30132e" md5="8916e053716a3a339e104b40985afd3a" sha1="fee6d7eb6cf38332a2094ba23932c05ce54b0bf9"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 07).bin" size="7389984" crc="313dc1b8" md5="70689249ce69740bde9dc9f059c67239" sha1="cbc40cf47f52aeda24dd1428c38e272bb81c0397"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 08).bin" size="10581648" crc="0860ea48" md5="5744825254b870085fc941e69d3e83f8" sha1="f49dc1c5c8b57a67fccae3de13152349d8a16264"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 09).bin" size="25641504" crc="2e56b4d0" md5="5908ed9c0931aa0b2f8069363842ae1f" sha1="b5a70534e09b4dbd023a005d2775b861afcdbc59"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 10).bin" size="14112000" crc="862800b1" md5="27b069528c3b07207357a78a044cc18c" sha1="4e5a96e2a39098810941923bc576b9d86dbc6920"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 11).bin" size="13658064" crc="5e046457" md5="88ee1b2d304ef5666cc202b5750f84b8" sha1="7165233b31246fdfb7cc3d9a2fe14d2052d6627a"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 12).bin" size="14469504" crc="a354220e" md5="136c66a71a2e0a8ee93623236f40ec3e" sha1="de3fe9222b82f3282ebb7e887efcd6370c713527"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 13).bin" size="12435024" crc="1c065d2f" md5="2339949a7a169b440a70c218e597730a" sha1="96a2f1d72b11e1aba8909a65808a16e0e17d814d"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 14).bin" size="16101792" crc="4cb72bdc" md5="107c4a345bcbb054b8851ec470057a90" sha1="957be674c82052e25b8bbbcacb9dad08b27792c3"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 15).bin" size="40181568" crc="36f77b89" md5="82cea04f6bdb54a4fb661a83a857d847" sha1="aa63ec028182e793d66600c1f0faa9891042ffcc"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 16).bin" size="30698304" crc="0f732d7f" md5="b1e9da43729106aa74250260b6012698" sha1="93e67c8412bc5d55c157220b97bdb95438c60af9"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 17).bin" size="40181568" crc="6b441288" md5="28724fd579d87edae0e02437c213b544" sha1="ee8e62893e2d29667cd932b1af4302ee46a947d0"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 18).bin" size="34586160" crc="81a99e2e" md5="a55fba4888e68d30de1ed500105d913d" sha1="4ab050c27b45dc53a9b0c7d25dc6b3766037cc31"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 19).bin" size="41950272" crc="707a4a54" md5="30724543e92ff4fe502a8063eceb21d4" sha1="57ae3e0d6033c6b91fd0f36924246efbdc095350"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 20).bin" size="41992608" crc="d4539024" md5="1070af850ad9cb3c17e271e33742cb6a" sha1="84beed8f77f2ffd83609cd0b8a222341c15cd91c"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 21).bin" size="38725680" crc="876bc054" md5="44ae3eeebc3d77464ff3ee787ee071fd" sha1="b3a428e7cc797826b5c26aa3789a5c11bb11f005"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 22).bin" size="37072224" crc="db1f548c" md5="44630e7f9aa8bdfab0ae0dba4b1cb5ca" sha1="916a4b26fde58b923d39994e249a882e0e904ab5"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 23).bin" size="42493584" crc="b3a04ecc" md5="61c39b35ccfb812d0e55a7189857f4ec" sha1="41e1a2378bbb240689a25c38b09d0d514d972e26"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 24).bin" size="21389088" crc="28513416" md5="a74f8b6dbedcd0436ef5fe490de9a7b9" sha1="7780ca606eabffcc671f608cea88942ad8fd21f8"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 25).bin" size="47239920" crc="f2279c9c" md5="bbfb5938fa90cdf43d7398ef8bb15709" sha1="4574ca53d20e99df0aa5665348ac5db3f693dd89"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 26).bin" size="42133728" crc="f60dbd6b" md5="d1fa3ff368d259b07236b5f85196ca4e" sha1="e2a79b8d4a3ce7ef28aa9367427c51e3d577e705"/>
-		<rom name="Choujin Gakuen - Gowcaizer (World) (En,Ja) (Track 27).bin" size="36964032" crc="8979e949" md5="31a8d7600b313b8daff84b552ee91be7" sha1="ad084faec5b63304eddb36cbe20d351382776cdd"/>
+		<description>Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja)</description>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja).cue" size="4491" crc="98dd43c3" md5="07505b9a813c8bd5760aaf7d6bf42ebc" sha1="92c0fd12800237a4b1b238949a537fd2946ec48a"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 01).bin" size="70764624" crc="ca7abd60" md5="9afa77d76a9e3bee12ac86ea379a157a" sha1="35c22c128029cd2fb9b678066686fce61180a33a"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 02).bin" size="3398640" crc="9dd4d998" md5="88667b04327e7557d792509107bd1d96" sha1="f0f0329d324826d18103e25f6f42c0029e2a4b21"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 03).bin" size="4939200" crc="61ddc898" md5="23b192efc73c8f80f86fc37eb3ce76a2" sha1="d167d81e2a97cf827146f1fb8a7320cf924f1311"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 04).bin" size="4167744" crc="c35b5a8b" md5="18170d9a99d90f020ba7574775529dd1" sha1="667ef2ca368de7247846899e768671ab1f7bb408"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 05).bin" size="12251568" crc="21ec5d2e" md5="6ce33e6d6a77876c9687c9b73e09c70b" sha1="247b9ab7f424184e08c1a76556ecf7b8cc3d76bd"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 06).bin" size="13933248" crc="af30132e" md5="8916e053716a3a339e104b40985afd3a" sha1="fee6d7eb6cf38332a2094ba23932c05ce54b0bf9"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 07).bin" size="7389984" crc="313dc1b8" md5="70689249ce69740bde9dc9f059c67239" sha1="cbc40cf47f52aeda24dd1428c38e272bb81c0397"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 08).bin" size="10581648" crc="0860ea48" md5="5744825254b870085fc941e69d3e83f8" sha1="f49dc1c5c8b57a67fccae3de13152349d8a16264"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 09).bin" size="25641504" crc="2e56b4d0" md5="5908ed9c0931aa0b2f8069363842ae1f" sha1="b5a70534e09b4dbd023a005d2775b861afcdbc59"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 10).bin" size="14112000" crc="862800b1" md5="27b069528c3b07207357a78a044cc18c" sha1="4e5a96e2a39098810941923bc576b9d86dbc6920"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 11).bin" size="13658064" crc="5e046457" md5="88ee1b2d304ef5666cc202b5750f84b8" sha1="7165233b31246fdfb7cc3d9a2fe14d2052d6627a"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 12).bin" size="14469504" crc="a354220e" md5="136c66a71a2e0a8ee93623236f40ec3e" sha1="de3fe9222b82f3282ebb7e887efcd6370c713527"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 13).bin" size="12435024" crc="1c065d2f" md5="2339949a7a169b440a70c218e597730a" sha1="96a2f1d72b11e1aba8909a65808a16e0e17d814d"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 14).bin" size="16101792" crc="4cb72bdc" md5="107c4a345bcbb054b8851ec470057a90" sha1="957be674c82052e25b8bbbcacb9dad08b27792c3"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 15).bin" size="40181568" crc="36f77b89" md5="82cea04f6bdb54a4fb661a83a857d847" sha1="aa63ec028182e793d66600c1f0faa9891042ffcc"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 16).bin" size="30698304" crc="0f732d7f" md5="b1e9da43729106aa74250260b6012698" sha1="93e67c8412bc5d55c157220b97bdb95438c60af9"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 17).bin" size="40181568" crc="6b441288" md5="28724fd579d87edae0e02437c213b544" sha1="ee8e62893e2d29667cd932b1af4302ee46a947d0"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 18).bin" size="34586160" crc="81a99e2e" md5="a55fba4888e68d30de1ed500105d913d" sha1="4ab050c27b45dc53a9b0c7d25dc6b3766037cc31"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 19).bin" size="41950272" crc="707a4a54" md5="30724543e92ff4fe502a8063eceb21d4" sha1="57ae3e0d6033c6b91fd0f36924246efbdc095350"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 20).bin" size="41992608" crc="d4539024" md5="1070af850ad9cb3c17e271e33742cb6a" sha1="84beed8f77f2ffd83609cd0b8a222341c15cd91c"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 21).bin" size="38725680" crc="876bc054" md5="44ae3eeebc3d77464ff3ee787ee071fd" sha1="b3a428e7cc797826b5c26aa3789a5c11bb11f005"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 22).bin" size="37072224" crc="db1f548c" md5="44630e7f9aa8bdfab0ae0dba4b1cb5ca" sha1="916a4b26fde58b923d39994e249a882e0e904ab5"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 23).bin" size="42493584" crc="b3a04ecc" md5="61c39b35ccfb812d0e55a7189857f4ec" sha1="41e1a2378bbb240689a25c38b09d0d514d972e26"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 24).bin" size="21389088" crc="28513416" md5="a74f8b6dbedcd0436ef5fe490de9a7b9" sha1="7780ca606eabffcc671f608cea88942ad8fd21f8"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 25).bin" size="47239920" crc="f2279c9c" md5="bbfb5938fa90cdf43d7398ef8bb15709" sha1="4574ca53d20e99df0aa5665348ac5db3f693dd89"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 26).bin" size="42133728" crc="f60dbd6b" md5="d1fa3ff368d259b07236b5f85196ca4e" sha1="e2a79b8d4a3ce7ef28aa9367427c51e3d577e705"/>
+		<rom name="Choujin Gakuen - Gowcaizer ~ Voltage Fighter - Gowcaizer (World) (En,Ja) (Track 27).bin" size="36964032" crc="8979e949" md5="31a8d7600b313b8daff84b552ee91be7" sha1="ad084faec5b63304eddb36cbe20d351382776cdd"/>
 	</game>
 	<game name="Next Thing, The - King of the Monsters 2 (World) (En,Ja)">
 		<category>Games</category>
